@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-weight: lighter;
+  height: stretch;
+  width: stretch;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+p, h3, h4, h2, h1, h5 {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}
+#root {
+  height: stretch;
+  width: stretch;
+  display: flex;
+  flex-direction: row;
+}
