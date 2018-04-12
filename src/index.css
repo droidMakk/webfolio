@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One|Tajawal');
+
 body {
+  font-family: 'Tajawal', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  font-weight: lighter;
+  font-weight: 100;
   height: stretch;
   width: stretch;
 }
 
 a {
   text-decoration-line: none;
+}
+
+.chennaibg{
+  width: 351px;
 }
 
 p, h3, h4, h2, h1, h5 {

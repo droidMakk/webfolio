@@ -3,6 +3,9 @@ import './component.css';
 import NavCard from './common/NavCard';
 import Displaydetails from './Displaydetails';
 import { Route, Link } from 'react-router-dom';
+import Home from './NavComponents/Home';
+import WhoAmI from './NavComponents/WhoAmI';
+import MeAndUnique from './NavComponents/MeAndUnique';
 
 const resdata = [
     {'mesg': 'Who Am I?','link':'/whoami' },
@@ -11,7 +14,8 @@ const resdata = [
     {'mesg': 'As a Dev','link':'/asadev' },
     {'mesg': 'Project Experience','link':'/projectexperience' },
     {'mesg': 'Communities','link':'/communities' },
-    {'mesg': 'Social','link':'/social' }
+    {'mesg': 'Social','link':'/social' },
+    {'mesg': 'Dev Stack','link':'/devstack'}
 ]
 
 class Navigator extends Component{
@@ -26,9 +30,9 @@ class Navigator extends Component{
                 </div>
             </div>
             <Displaydetails>
-                <Route exact path="/" component={Root} />
-                <Route path="/whoami" component={WhoAmI} />
-                <Route path="/meandunique" component={MeandUnique} />
+                <Route exact path='/' component={Home} />
+                <Route path='/whoami' component={WhoAmI} />
+                <Route path='/meandunique' component={MeAndUnique} />
             </Displaydetails>            
             </Fragment>
         )
@@ -36,29 +40,6 @@ class Navigator extends Component{
 }
 export default Navigator;
 
-const Root = () => {
-    return(
-        <div>
-            Root
-        </div>
-    )
-}
-
-const WhoAmI = () => {
-    return(
-        <div>
-            WhoAmI
-        </div>
-    )
-}
-
-const MeandUnique = () => {
-    return(
-        <div>
-            MeandUnique
-        </div>
-    )
-}
 
 const NavElement = (props) => {
     const { mesg, link } = props.data;

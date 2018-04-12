@@ -1,0 +1,23 @@
+.holder{
+    background-color: whitesmoke;
+    margin: 2%;
+    padding: 4%;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24),
+    0 1.5px 6px rgba(0, 0, 0, 0.12);
+    overflow: auto;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.holder > p{
+    font-size: 80px;
+    font-weight: lighter;
+    position: relative;
+    text-align: right;
+}
+
+.holder > img{
+    width: 30%;
+    float: left;
+    vertical-align: middle;
+}

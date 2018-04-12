@@ -4,7 +4,9 @@ import './component.css';
 const Displaydetails = (props) => {
     return(
         <div className="displayDetails">
-            {props.children}
+            <div className="displayContainer">
+                {props.children}
+            </div>
         </div>
     );
 }

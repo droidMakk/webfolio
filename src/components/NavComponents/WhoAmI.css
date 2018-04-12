@@ -1,0 +1,62 @@
+.displaydetailcard{
+    background-color: whitesmoke;
+    margin: 2%;
+    padding: 4%;
+    box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24),
+    0 1.5px 6px rgba(0, 0, 0, 0.12);
+    overflow: auto;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.displaydetailTitle{
+    font-size: 40px;
+    text-align: right;
+}
+
+.meanduniquebg{
+    width: 100%;
+}
+
+.courgette{
+    font-size: 25px;
+}
+
+.devImage{
+    float: right;
+    font-size: 50px;
+}
+
+.chnBoard{
+    font-size: 50px;
+    text-align: center;
+    background-color: #0091CF;
+    color: #212121;
+}
+
+.chnBoard > span:nth-child(-n+5){
+    color: #EBF0F6;
+    text-shadow: 2px 2px 1px #01010180;
+}
+
+.uniqueList{
+    padding: 10px;
+}
+
+.uniqueList > div{
+    height: 40px;
+    font-size: 20px;
+}
+
+.uniqueList > div::before{
+    color: #00000038;
+    content: "\25CF\2015";
+    display: inline;
+    vertical-align: initial;
+}
+
+.chennaiBG{
+    width: 100%;
+    margin-bottom: -17px;
+    padding-bottom: 0px;
+}
