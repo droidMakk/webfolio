@@ -4,10 +4,13 @@ import MeAndUniqueBg from '../../assets/meanduniquebg.jpg';
 const MeAndUnique = () => {
     return(
         <div className="displaydetailcard">
-            <p className="displaydetailTitle">Me And Unique...</p>
+            <p className="displaydetailTitle">🛸Me And Unique...</p>
             <hr/>
-            <p className="courgette bottomMargin10">Always remember that you are absolutely unique. Just like everyone else.</p>
-            <img alt="Me and Unique bg" src={MeAndUniqueBg} className="meanduniquebg" />
+            <p className="courgette bottomMargin10">
+                Always remember that you are absolutely unique. Just like everyone else.
+            </p>
+            <p className="alignRight">-Margaret Mead</p>
+            <img alt="Me and Unique bg" src={MeAndUniqueBg} className="meanduniquebg width100" />
             <div className="uniqueList">
                 <div>Tech Savy</div>
                 <div>Quick Graspoer of Modern Techs</div>
@@ -19,4 +22,4 @@ const MeAndUnique = () => {
     )
 } 
 
-export default MeAndUnique;
+export { MeAndUnique };

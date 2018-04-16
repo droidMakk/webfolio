@@ -1,11 +1,11 @@
 import React from 'react';
-import './WhoAmI.css';
+import './navcomponents.css';
 import bg_chennai from '../../assets/bg_chennai.jpg';
 
 const WhoAmI = () => {
     return(
         <div className="displaydetailcard">
-            <p className="displaydetailTitle">Who Am I?</p>
+            <p className="displaydetailTitle">🤔 Who Am I?</p>
             <hr/>
             <br/>
             <p className="courgette bottomMargin10">
@@ -13,7 +13,7 @@ const WhoAmI = () => {
             India...
             </p>
             <div>
-                <img src={bg_chennai} alt="Chennai BG" className="chennaiBG" />
+                <img src={bg_chennai} alt="Chennai BG" className="chennaiBG width100" />
                 <Chennai/>
             </div>
             <br/>
@@ -50,4 +50,4 @@ const Chennai = () => {
     )
 }
 
-export default WhoAmI;
+export { WhoAmI };

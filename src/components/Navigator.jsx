@@ -1,11 +1,8 @@
 import React,{ Component, Fragment } from 'react';
 import './component.css';
 import NavCard from './common/NavCard';
-import Displaydetails from './Displaydetails';
-import { Route, Link } from 'react-router-dom';
-import Home from './NavComponents/Home';
-import WhoAmI from './NavComponents/WhoAmI';
-import MeAndUnique from './NavComponents/MeAndUnique';
+import { Link } from 'react-router-dom';
+
 
 const resdata = [
     {'mesg': 'Who Am I?','link':'/whoami' },
@@ -15,13 +12,13 @@ const resdata = [
     {'mesg': 'Project Experience','link':'/projectexperience' },
     {'mesg': 'Communities','link':'/communities' },
     {'mesg': 'Social','link':'/social' },
-    {'mesg': 'Dev Stack','link':'/devstack'}
+    {'mesg': 'Dev Stack','link':'/devstack'},
+    {'mesg': 'Credits','link':'/credits'},
 ]
 
 class Navigator extends Component{
     render(){
         return(
-            <Fragment>
             <div className="navigatorHolder">
                 <div className="navigator">
                     <nav className="navelement">
@@ -29,12 +26,6 @@ class Navigator extends Component{
                     </nav>
                 </div>
             </div>
-            <Displaydetails>
-                <Route exact path='/' component={Home} />
-                <Route path='/whoami' component={WhoAmI} />
-                <Route path='/meandunique' component={MeAndUnique} />
-            </Displaydetails>            
-            </Fragment>
         )
     }
 }

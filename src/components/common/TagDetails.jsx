@@ -16,12 +16,12 @@ const TagDetails = () => {
             <Card>
                 <Card>
                     <a href="tel:+91-8939717211">
-                        <h5 className="thinText whiteText"><span className="darkText">(+91) 89397</span>-17211</h5>
+                        <h5 className="thinText whiteText">📞<span className="darkText"> (+91) 89397</span>-17211</h5>
                     </a>
                 </Card>
                 <Card>
                     <a href="mailto:mafrozekk@gmail.com">
-                        <h5 className="thinText whiteText">mafrozekk@<span className="darkText">gmail.com</span></h5>
+                        <h5 className="thinText whiteText">📮 mafrozekk@<span className="darkText">gmail.com</span></h5>
                     </a>
                 </Card>
             </Card>

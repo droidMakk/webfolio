@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import MainProfile from './components/MainProfile';
 import Navigator from './components/Navigator';
 import {BrowserRouter as Router} from 'react-router-dom';
+import Displaydetails from './components/Displaydetails';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
         <Fragment>
           <MainProfile />
           <Navigator/>
+          <Displaydetails/>
         </Fragment>
       </Router>
     );
