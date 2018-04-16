@@ -1,19 +1,21 @@
 import React from 'react';
 import './component.css';
-import profie_image from '../assets/profile_image.jpg';
 import TagDetails from './common/TagDetails';
 import dev_bg from '../assets/dev_bg.jpg';
+import profie_image from '../assets/profile_image.jpg';
 
 const MainProfile = () => {
     return(
         <div className="mainProfileStyle">
             <div className="imageHolder" style={ inLinImageBg }>
-                <img src={profie_image}  className="imagebanner" alt="Profile Pic"/>
+                <img src={profie_image} className="imagebanner" alt="Profile Pic" />                
             </div>
             <TagDetails />
         </div>
     )
 }
+
+
 
 const inLinImageBg = {
     backgroundImage: "url(" + dev_bg + ")",

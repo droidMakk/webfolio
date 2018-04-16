@@ -2,7 +2,9 @@ import React from 'react';
 import './AlmaMater.css';
 import studentIcon from '../../assets/student.svg';
 import DataCamp from '../../assets/datacamp.svg';
+import Loader from 'react-loader';
 import EduBanner from '../../assets/education.jpg';
+import ImageLoader from 'react-load-image';
 
 
 const AlmaMater = () => {
@@ -16,7 +18,7 @@ const AlmaMater = () => {
             </p>
             <p className="alignRight">Anthony J. D'Angelo</p>
             <br/>
-            <img src={EduBanner} className="width100"/>
+            <AlmaBgLoader />
             <p className="courgette">
                     <br/>
                 Graduation in Electrical and Electronics Engineering
@@ -33,6 +35,16 @@ const AlmaMater = () => {
             </div>
         </div>
     )
+}
+
+const AlmaBgLoader = () => {
+    return(
+        <ImageLoader src={EduBanner}>
+            <img className="width100" alt="Edu Banner" />
+            <div>Error Loading Image!</div>
+            <Loader />
+        </ImageLoader>
+    );
 }
 
 export { AlmaMater };

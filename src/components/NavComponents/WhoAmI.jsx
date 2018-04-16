@@ -1,11 +1,14 @@
 import React from 'react';
 import './navcomponents.css';
+import Loader from 'react-loader';
+import ImageLoader from 'react-load-image';
 import bg_chennai from '../../assets/bg_chennai.jpg';
+
 
 const WhoAmI = () => {
     return(
         <div className="displaydetailcard">
-            <p className="displaydetailTitle">🤔 Who Am I?</p>
+            <p className="displaydetailTitle"><span>🤔</span>Who Am I?</p>
             <hr/>
             <br/>
             <p className="courgette bottomMargin10">
@@ -13,7 +16,7 @@ const WhoAmI = () => {
             India...
             </p>
             <div>
-                <img src={bg_chennai} alt="Chennai BG" className="chennaiBG width100" />
+                <ChennaiBgLoader />
                 <Chennai/>
             </div>
             <br/>
@@ -21,7 +24,7 @@ const WhoAmI = () => {
                 Aspiring to become a professionally equipped, efficient
                 &amp; community driven <br/>
                 <br/>
-                😜 Creative Too... 
+                <span>😜</span>Creative Too... 
                 <br/>
                 <br/>
                 <strong>
@@ -33,6 +36,16 @@ const WhoAmI = () => {
                 <div className="devImage"><span>👨‍💻</span></div>
             </div>
         </div>
+    )
+}
+
+const ChennaiBgLoader = () => {
+    return(
+        <ImageLoader src={bg_chennai}>
+            <img  alt="Chennai BG" className="chennaiBG width100" />
+            <div>Error Loading Image!</div>
+            <Loader/>
+        </ImageLoader>
     )
 }
 

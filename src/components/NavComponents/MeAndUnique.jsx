@@ -1,5 +1,8 @@
 import React from 'react';
+import Loader from 'react-loader';
+import ImageLoader from 'react-load-image';
 import MeAndUniqueBg from '../../assets/meanduniquebg.jpg';
+
 
 const MeAndUnique = () => {
     return(
@@ -10,7 +13,7 @@ const MeAndUnique = () => {
                 Always remember that you are absolutely unique. Just like everyone else.
             </p>
             <p className="alignRight">-Margaret Mead</p>
-            <img alt="Me and Unique bg" src={MeAndUniqueBg} className="meanduniquebg width100" />
+            <MAUImageLoader />
             <div className="uniqueList">
                 <div>Tech Savy</div>
                 <div>Quick Graspoer of Modern Techs</div>
@@ -21,5 +24,15 @@ const MeAndUnique = () => {
         </div>
     )
 } 
+
+const MAUImageLoader = () => {
+    return(
+        <ImageLoader src={MeAndUniqueBg}>
+            <img className="meanduniquebg width100" alt="Me and Unique BG"/>
+            <div>Error Loading Image!</div>
+            <Loader />
+        </ImageLoader>
+    )
+}
 
 export { MeAndUnique };
