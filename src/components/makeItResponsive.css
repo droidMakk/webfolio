@@ -1,0 +1,55 @@
+@media only screen and (max-width: 430px){
+    #root{
+        display: block !important;
+    }
+    .mainProfileStyle,
+    .navigatorHolder,
+    .displayDetails {
+        position: absolute;
+        width: stretch;
+        height: stretch;
+        transition: all 0.75s cubic-bezier(0.075, 0.82, 0.165, 1)
+    }
+
+    .showNavAndProfile{
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-color: goldenrod;
+        position: fixed;
+        bottom: 35px;
+        right: 30px;
+        border-radius: 50%;
+    }
+
+    .holder > p{
+        text-align: left;
+    }
+
+    .holder > img{
+        float: right;
+    }
+
+    .displayDetails {
+        z-index: 0;
+    }
+
+    .navigatorHolder,
+    .navDisplay {
+        display: none;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    .displayIt{
+        z-index: 1;
+        display: block;
+        opacity: 1;
+    }
+
+    .mainProfileStyle{
+        display: none;
+        opacity: 0;
+    }
+
+}

@@ -17,6 +17,9 @@
     margin-bottom: 10px;
 }
 
+.showNavAndProfile{
+    display: none;
+}
 
 .navigator {
     align-content: center;
