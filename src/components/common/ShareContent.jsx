@@ -14,7 +14,7 @@ class ShareContent extends Component {
                 text: 'Dev Rocks ✊!',
                 url: 'https://droidmakk.github.io'
             })
-                .catch(() => alert('That\' Rude 🤨'));
+                .catch(() => alert('That\'s Rude 🤨'));
         }else{
             alert('🤔 I Think... \nMaybe its not \nSupported!');
         }

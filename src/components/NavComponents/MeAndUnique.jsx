@@ -7,7 +7,7 @@ import MeAndUniqueBg from '../../assets/meanduniquebg.jpg';
 const MeAndUnique = () => {
     return(
         <div className="displaydetailcard">
-            <p className="displaydetailTitle">🛸Me And Unique...</p>
+            <p className="displaydetailTitle"><span role="img" aria-label="unique" >🛸</span>Me And Unique...</p>
             <hr/>
             <p className="courgette bottomMargin10">
                 Always remember that you are absolutely unique. Just like everyone else.

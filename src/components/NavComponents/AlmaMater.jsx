@@ -10,7 +10,7 @@ import ImageLoader from 'react-load-image';
 const AlmaMater = () => {
     return(
         <div className="displaydetailcard">
-            <h1 className="alignRight thinText displaydetailTitle">🏫 Alma Mater...</h1>
+            <h1 className="alignRight thinText displaydetailTitle"><span role="img" aria-label="school" >🏫</span> Alma Mater...</h1>
             <hr/>
             <p className="courgette">
                 Develop a passion for learning. if you do, you will

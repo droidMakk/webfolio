@@ -8,7 +8,7 @@ import bg_chennai from '../../assets/bg_chennai.jpg';
 const WhoAmI = () => {
     return(
         <div className="displaydetailcard">
-            <p className="displaydetailTitle"><span>🤔</span>Who Am I?</p>
+            <p className="displaydetailTitle"><span role="img" aria-label="thinking" >🤔</span>Who Am I?</p>
             <hr/>
             <br/>
             <p className="courgette bottomMargin10">
@@ -24,7 +24,7 @@ const WhoAmI = () => {
                 Aspiring to become a professionally equipped, efficient
                 &amp; community driven <br/>
                 <br/>
-                <span>😜</span>Creative Too... 
+                <span role="img" aria-label="creative" >😜</span>Creative Too... 
                 <br/>
                 <br/>
                 <strong>
@@ -33,7 +33,7 @@ const WhoAmI = () => {
                     <strong>MERN</strong> &amp; IoT
                 </strong>
                 <br/>
-                <div className="devImage"><span>👨‍💻</span></div>
+                <div className="devImage"><span role="img" aria-label="geek" >👨‍💻</span></div>
             </div>
         </div>
     )
