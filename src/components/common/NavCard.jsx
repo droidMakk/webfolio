@@ -2,13 +2,11 @@ import React from 'react';
 import './Card.css';
 
 const NavCard = (props) => {
-    const { children } = props;
+    const { children, onClick } = props;
 
-    return(
-        <div className="navholderStyle block">
-            {children}
-        </div>
-    )
+    return <div className="navholderStyle block" onClick={onClick}>
+        {children}
+      </div>;
 }
 
 export default NavCard;

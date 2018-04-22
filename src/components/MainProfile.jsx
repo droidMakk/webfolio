@@ -1,18 +1,31 @@
-import React from 'react';
-import './component.css';
+import React,{ Component } from 'react';
 import TagDetails from './common/TagDetails';
+import NavTogglr from './common/NavTogglr';
+import './component.css';
+import profie_image from '../assets/profile_image.jpg'; 
 import dev_bg from '../assets/dev_bg.jpg';
-import profie_image from '../assets/profile_image.jpg';
 
-const MainProfile = () => {
-    return(
-        <div className="mainProfileStyle">
-            <div className="imageHolder" style={ inLinImageBg }>
-                <img src={profie_image} className="imagebanner" alt="Profile Pic" />                
+class MainProfile extends Component {
+
+    closeProfile(){
+        document.getElementById("mainProfileStyle").style.opacity = 0;
+        setTimeout(() => {
+            document.getElementById("mainProfileStyle").style.display = "none";
+        }, 750);
+    }
+    
+    render(){
+        return <div className="mainProfileStyle" id="mainProfileStyle">
+            <div className="navswitch" onClick={this.closeProfile}>
+                <NavTogglr/>
+            </div>
+            <div className="imageHolder" style={inLinImageBg}>
+              <img src={profie_image} className="imagebanner" alt="Profile Pic" />
             </div>
             <TagDetails />
-        </div>
-    )
+          </div>;
+    }
+    
 }
 
 

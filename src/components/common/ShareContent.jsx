@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import sharenetwork from '../../assets/network.svg';
 import pdficon from '../../assets/pdf.svg';
-import download from '../../assets/download.svg';
+import downIcon from "../../assets/down-arrow.svg";
 import './ShareContent.css';
 
 class ShareContent extends Component {
@@ -21,18 +21,22 @@ class ShareContent extends Component {
     }
 
     render(){
-        return (
-            <div className="shareContent">
-                <div className="shareHolder" onClick={this.shareMe.bind(this)}>
-                    <img className="shareIcon" src={sharenetwork} alt="share" />    
-                </div>
-                <div className="exportPdf">
-                    <div className="pdfText marginAuto"><h3 className="thinText">Download as PDF</h3></div>
-                    <div className="pdfIcon marginAuto" ><img className="" src={pdficon} alt="PDF Icon"/></div>
-                    <div className="pdfIcon marginAuto" ><img className="downloadSvg" src={download} alt="Download Icon"/></div>                    
-                </div>
+        return <div className="shareContent">
+            <div className="shareHolder" onClick={this.shareMe.bind(this)}>
+              <img className="shareIcon" src={sharenetwork} alt="share" />
             </div>
-        );
+            <div className="exportPdf">
+              <div className="pdfText marginAuto">
+                <h3 className="thinText">Download as PDF</h3>
+              </div>
+              <div className="pdfIcon marginAuto">
+                <img className="pdfImage" src={pdficon} alt="PDF Icon" />
+              </div>
+              <div className="pdfIcon marginAuto">
+                <img className="" src={downIcon} alt="PDF Icon" />
+              </div>
+            </div>
+          </div>;
     }
 }
 
