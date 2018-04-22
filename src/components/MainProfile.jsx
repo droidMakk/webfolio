@@ -29,7 +29,6 @@ class MainProfile extends Component {
 }
 
 
-
 const inLinImageBg = {
     backgroundImage: "url(" + dev_bg + ")",
     paddingTop: '40px',

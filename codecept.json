@@ -1,0 +1,18 @@
+{
+  "tests": "cept_test/*_test.js",
+  "timeout": 10000,
+  "output": "outcept",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://localhost:3000",
+      "browser": "chrome",
+      "windowSize":"375x667"
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "webfolio"
+}
