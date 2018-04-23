@@ -16,7 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    // "prepublish": "yarn build",
+    "publish": "gh-pages -d build"
   },
-  "homepage": "http://droidmakk.ml/"
+  "homepage": "http://droidmakk.ml/",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }
