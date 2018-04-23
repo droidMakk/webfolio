@@ -17,8 +17,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    // "prepublish": "yarn build",
-    "publish": "gh-pages -d build"
+    "prepublish": "yarn build",
+    "publish": "gh-pages -b master -d build"
   },
   "homepage": "http://droidmakk.ml/",
   "devDependencies": {
