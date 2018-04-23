@@ -80,11 +80,10 @@
     }
 
     .topArrow{
-        margin-bottom: -8px;
-        margin-top: 0px;
+        transform: translate(0px, 8px);
     }
 
     .bottomArrow{
-        margin-top: 0px;
+        transform: translate(0px, -8px);
     }
 }

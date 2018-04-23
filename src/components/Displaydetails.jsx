@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './component.css';
 import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev } from './NavComponents';
 import NavTogglr from "./common/NavTogglr";
@@ -63,15 +63,19 @@ class Displaydetails extends Component {
       return <div className="displayDetails">
           <div className="navswitch mainTogglr" onClick={() => {
               this.toggleMainNav();
-            }} >{ this.ViewTogglr() }</div>
-          <div id="subTogglrProf" className="navswitch subTogglr" onClick={ this.showProfile } />
-          <div id="subTogglrNav" className="navswitch subTogglr" onClick={ this.showNavigator } />
+            }}>
+            {this.ViewTogglr()}
+          </div>
+          <div id="subTogglrProf" className="navswitch subTogglr" onClick={this.showProfile} />
+          <div id="subTogglrNav" className="navswitch subTogglr" onClick={this.showNavigator} />
           <div className="displayContainer">
-            <Route exact path="/" component={Home} />
-            <Route path="/whoami" component={WhoAmI} />
-            <Route path="/meandunique" component={MeAndUnique} />
-            <Route path="/almamater" component={AlmaMater} />
-            <Route path="/asadev" component={AsaDev} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/whoami" component={WhoAmI} />
+              <Route exact path="/meandunique" component={MeAndUnique} />
+              <Route exact path="/almamater" component={AlmaMater} />
+              <Route exact path="/asadev" component={AsaDev} />
+            </Switch>
           </div>
         </div>;
     }
