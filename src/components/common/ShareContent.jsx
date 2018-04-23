@@ -11,8 +11,8 @@ class ShareContent extends Component {
         if (navigator.share) {
             navigator.share({
                 title: 'Droid Makk\' Site',
-                text: 'Dev Rocks ✊!',
-                url: 'https://droidmakk.github.io'
+                text: 'Full Stack Dev ✊!',
+                url: 'https://droidmakk.ml'
             })
                 .catch(() => alert('That\'s Rude 🤨'));
         }else{
