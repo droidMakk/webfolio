@@ -1,8 +1,8 @@
 import React from 'react';
 import './navcomponents.css';
-import Loader from 'react-loader';
 import ImageLoader from 'react-load-image';
 import bg_chennai from '../../assets/bg_chennai.jpg';
+import optbg_chennai from "../../assets/optimized/optbg_chennai.jpg";
 
 
 const WhoAmI = () => {
@@ -39,14 +39,17 @@ const WhoAmI = () => {
     )
 }
 
+const OptimalChennaiBg = () => {
+    return <img src={optbg_chennai} className="blurredImage chennaiBG width100" />;
+}
+
 const ChennaiBgLoader = () => {
-    return(
-        <ImageLoader src={bg_chennai}>
-            <img  alt="Chennai BG" className="chennaiBG width100" />
-            <div>Error Loading Image!</div>
-            <Loader/>
-        </ImageLoader>
-    )
+    return <ImageLoader src={bg_chennai}>
+        <img alt="Chennai BG" className="chennaiBG width100" />
+        <div>Error Loading Image!</div>
+        <OptimalChennaiBg />
+        {/* <RingLoader/> */}
+      </ImageLoader>;
 }
 
 const Chennai = () => {

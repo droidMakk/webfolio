@@ -16,7 +16,7 @@ const MeAndUnique = () => {
             <MAUImageLoader />
             <div className="uniqueList">
                 <div>Tech Savy</div>
-                <div>Quick Graspoer of Modern Techs</div>
+                <div>Quick Grasper of Modern Techs</div>
                 <div>Learn, Evolve &amp; Grow</div>
                 <div>Open Source Enthusiast</div>
                 <div>BYOD</div>
