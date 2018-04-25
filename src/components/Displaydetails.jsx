@@ -3,6 +3,8 @@ import { Route, Switch } from 'react-router-dom';
 import './component.css';
 import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev } from './NavComponents';
 import NavTogglr from "./common/NavTogglr";
+import HamMenu from "../assets/ham-menu.svg";
+import profileIcon from "../assets/profileIcon.svg";
 
 class Displaydetails extends Component {
 
@@ -66,8 +68,12 @@ class Displaydetails extends Component {
             }}>
             {this.ViewTogglr()}
           </div>
-          <div id="subTogglrProf" className="navswitch subTogglr" onClick={this.showProfile} />
-          <div id="subTogglrNav" className="navswitch subTogglr" onClick={this.showNavigator} />
+          <div id="subTogglrProf" className="navswitch subTogglr" onClick={this.showProfile} >
+            <img src={profileIcon} alt="my-profile" className="subTogglrIcon"/>          
+          </div>
+          <div id="subTogglrNav" className="navswitch subTogglr" onClick={this.showNavigator} >
+            <img src={HamMenu} alt="ham-menu" className="subTogglrIcon"/>          
+          </div>
           <div className="displayContainer">
             <Switch>
               <Route exact path="/" component={Home} />

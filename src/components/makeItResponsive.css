@@ -86,4 +86,27 @@
     .bottomArrow{
         transform: translate(0px, -3px);
     }
+
+    .subTogglrIcon{
+        transform: translate(5px,5px);
+        width: 80%;
+    }
+
+    .topBar{
+        display: block !important;       
+        background-color: #fd4445;
+        padding: 8px;
+    }
+
+    .topBar > h1{
+        color: #232222;
+        background-color: #f5f5f5;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        text-align: right;
+        box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24),
+        0 1.5px 6px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+    }
 }
