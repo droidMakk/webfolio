@@ -4,7 +4,7 @@ import ShareContent from './ShareContent.jsx';
 
 const TagDetails = () => {
     return <div className="tagDetails">
-        <span itemptype="">
+        <span>
         <Card>
           <Card>
             <h2 className="displayInline whiteText thinText">
@@ -16,7 +16,7 @@ const TagDetails = () => {
           </Card>
         </Card>
         </span>
-        <span  itemScope itemType="http://schema.org/ContactPoint">
+        <span>
         <Card>
           <Card>
             <a href="tel:+91-8939717211">
@@ -24,7 +24,7 @@ const TagDetails = () => {
                 <span role="img" aria-label="contact-me">
                   📞
                 </span>
-                <span className="darkText" itemProp="telephone">
+                <span className="darkText">
                   (+91) 89397
                 </span>-17211
               </h5>
@@ -32,7 +32,7 @@ const TagDetails = () => {
           </Card>
           <Card>
             <a href="mailto:mafrozekk@gmail.com">
-              <h5 className="thinText whiteText" itemProp="email">
+              <h5 className="thinText whiteText">
                 <span role="img" aria-label="mail-box">
                   📮
                 </span> mafrozekk@<span className="darkText">

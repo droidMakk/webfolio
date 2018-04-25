@@ -40,7 +40,7 @@ const WhoAmI = () => {
 }
 
 const OptimalChennaiBg = () => {
-    return <img src={optbg_chennai} className="blurredImage chennaiBG width100" />;
+    return <img src={optbg_chennai} alt="Chennai Bg Optimized" className="blurredImage chennaiBG width100" />;
 }
 
 const ChennaiBgLoader = () => {

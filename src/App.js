@@ -8,7 +8,7 @@ import './components/makeItResponsive.css';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/" >
         <Fragment>
           <MainProfile />
           <Navigator/>

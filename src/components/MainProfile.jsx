@@ -3,7 +3,7 @@ import TagDetails from './common/TagDetails';
 import NavTogglr from './common/NavTogglr';
 import './component.css';
 import profie_image from '../assets/profile_image.jpg'; 
-import dev_bg from '../assets/dev_bg.jpg';
+import dev_bg from '../assets/optimized/dev_bg.jpg';
 
 class MainProfile extends Component {
 

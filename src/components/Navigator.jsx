@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 const resdata = [
+    {'mesg': 'Home','link':'/'},
     {'mesg': 'Who Am I?','link':'/whoami' },
     {'mesg': 'Me and Unique','link':'/meandunique' },
     {'mesg': 'Alma mater','link':'/almamater' },

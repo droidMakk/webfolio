@@ -1,7 +1,7 @@
 import React from 'react';
-import Loader from 'react-loader';
 import ImageLoader from 'react-load-image';
 import MeAndUniqueBg from '../../assets/meanduniquebg.jpg';
+import optmeanduniquebg from "../../assets/optimized/optmeanduniquebg.jpg";
 
 
 const MeAndUnique = () => {
@@ -25,14 +25,17 @@ const MeAndUnique = () => {
     )
 } 
 
+const OptMeandUniquebg = () => {
+  return <img src={optmeanduniquebg} alt="Optimized Me and Unique BG" className="blurredImage meanduniquebg width100" />;
+};
+
+
 const MAUImageLoader = () => {
-    return(
-        <ImageLoader src={MeAndUniqueBg}>
-            <img className="meanduniquebg width100" alt="Me and Unique BG"/>
-            <div>Error Loading Image!</div>
-            <Loader />
-        </ImageLoader>
-    )
+    return <ImageLoader src={MeAndUniqueBg}>
+        <img className="meanduniquebg width100" alt="Me and Unique BG" />
+        <div>Error Loading Image!</div>
+        <OptMeandUniquebg />
+      </ImageLoader>;
 }
 
 export { MeAndUnique };

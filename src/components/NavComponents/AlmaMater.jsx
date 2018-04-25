@@ -2,8 +2,8 @@ import React from 'react';
 import './AlmaMater.css';
 import studentIcon from '../../assets/student.svg';
 import DataCamp from '../../assets/datacamp.svg';
-import Loader from 'react-loader';
 import EduBanner from '../../assets/education.jpg';
+import OptEduBanner from "../../assets/optimized/OptEducation.jpg";
 import ImageLoader from 'react-load-image';
 
 
@@ -37,14 +37,16 @@ const AlmaMater = () => {
     )
 }
 
+const OptEducation = () => {
+  return <img src={OptEduBanner} className="blurredImage width100" alt="Edu Banner Optimized" />;
+};
+
 const AlmaBgLoader = () => {
-    return(
-        <ImageLoader src={EduBanner}>
-            <img className="width100" alt="Edu Banner" />
-            <div>Error Loading Image!</div>
-            <Loader />
-        </ImageLoader>
-    );
+    return <ImageLoader src={EduBanner}>
+        <img className="width100" alt="Edu Banner" />
+        <div>Error Loading Image!</div>
+        <OptEducation />
+      </ImageLoader>;
 }
 
 export { AlmaMater };
