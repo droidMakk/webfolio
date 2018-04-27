@@ -80,7 +80,7 @@
     }
 
     .topArrow{
-        transform: translate(0px, 7px);
+        transform: translate(0px, 14px);
     }
 
     .bottomArrow{
@@ -96,13 +96,15 @@
         display: block !important;       
         background-color: #fd4445;
         padding: 8px;
+        position: sticky;
+        top: 0px;
     }
 
     .topBar > h1{
         color: #232222;
         background-color: #f5f5f5;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        height: 55px;
+        line-height: 55px;
         padding-right: 10px;
         text-align: right;
         box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24),

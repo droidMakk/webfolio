@@ -1,6 +1,6 @@
 import React from 'react';
 import './AsaDev.css';
-import nodejs from '../../assets/nodejs.png';
+import Technologies from './SlickDev/Technologies';
 
 const AsaDev = () => {
     return <div className="displaydetailcard">
@@ -11,17 +11,11 @@ const AsaDev = () => {
         </p>
         <hr />
         <div className="asadevdetails">
-          <h1 className="courgette">Programming Languages</h1>
+          <h1 className="courgette">Programming Stack Exposed To..</h1>
           <br />
-          <p className="thinText">
-            <span>
-              <img className="devlangicon" src={nodejs} alt="nodeone" />
-            </span>Node JS
-            <br />
-            <span>
-              <img className="devlangicon" src={nodejs} alt="nodetwo" />
-            </span>Node JS
-          </p>
+          <div>
+            <Technologies />
+          </div>
         </div>
       </div>;
 }

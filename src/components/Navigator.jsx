@@ -3,6 +3,7 @@ import './component.css';
 import NavCard from './common/NavCard';
 import NavTogglr from './common/NavTogglr';
 import { Link } from 'react-router-dom';
+import TopBar from "./TopBar";
 
 
 const resdata = [
@@ -14,7 +15,6 @@ const resdata = [
     {'mesg': 'Project Experience','link':'/projectexperience' },
     {'mesg': 'Communities','link':'/communities' },
     {'mesg': 'Social','link':'/social' },
-    {'mesg': 'Dev Stack','link':'/devstack'},
     {'mesg': 'Credits','link':'/credits'},
 ]
 
@@ -30,8 +30,9 @@ class Navigator extends Component {
 
   render() {
     return <div className="navigatorHolder" id="navigatorHolder">
+        <TopBar />
         <div className="navswitch" onClick={this.closeNavigator}>
-          <NavTogglr/>
+          <NavTogglr />
         </div>
         <div className="navigator">
           <nav className="navelement">

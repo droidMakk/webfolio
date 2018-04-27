@@ -5,6 +5,7 @@ import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev } from './NavComponents';
 import NavTogglr from "./common/NavTogglr";
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
+import TopBar from './TopBar';
 
 class Displaydetails extends Component {
 
@@ -13,6 +14,21 @@ class Displaydetails extends Component {
         this.toggleMainNav = this.toggleMainNav.bind(this);
         this.showNavigator = this.showNavigator.bind(this);
         this.showProfile = this.showProfile.bind(this);
+        window.addEventListener('resize',()=>{
+            var el2 = document.getElementById("navigatorHolder");
+            var el = document.getElementById("mainProfileStyle");
+            if(window.outerWidth > 450){
+                el.style.display="block";
+                el.style.opacity=1;
+                el2.style.display="block";
+                el2.style.opacity=1;
+            }else{
+                el2.style.display="none";
+                el2.style.opacity=0;
+            }
+        });
+        
+        
     }
     
     state = { isNavOpen: false };
@@ -54,25 +70,22 @@ class Displaydetails extends Component {
     }
     
     ViewTogglr(){
-        if(this.state.isNavOpen){
-            return <NavTogglr />;
-        }else{
-            return <div>o</div>
-        }
+        return <NavTogglr />;
     }
 
     render() {
       return <div className="displayDetails">
+          <TopBar />
           <div className="navswitch mainTogglr" onClick={() => {
               this.toggleMainNav();
             }}>
             {this.ViewTogglr()}
           </div>
-          <div id="subTogglrProf" className="navswitch subTogglr" onClick={this.showProfile} >
-            <img src={profileIcon} alt="my-profile" className="subTogglrIcon"/>          
+          <div id="subTogglrProf" className="navswitch subTogglr" onClick={this.showProfile}>
+            <img src={profileIcon} alt="my-profile" className="subTogglrIcon" />
           </div>
-          <div id="subTogglrNav" className="navswitch subTogglr" onClick={this.showNavigator} >
-            <img src={HamMenu} alt="ham-menu" className="subTogglrIcon"/>          
+          <div id="subTogglrNav" className="navswitch subTogglr" onClick={this.showNavigator}>
+            <img src={HamMenu} alt="ham-menu" className="subTogglrIcon" />
           </div>
           <div className="displayContainer">
             <Switch>

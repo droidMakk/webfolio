@@ -1,11 +1,14 @@
-import React from 'react';
+import React,{ Component } from 'react';
 
-const NavTogglr = () => {
-    return <div className="navswitchHolder">
-        <div className="topArrow">
-          <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15" className="topArrow">
-            <g transform="translate(904.92214,-879.1482)">
-              <path d="
+class NavTogglr extends Component {
+
+    render(){
+      
+      return <div className="navswitchHolder">
+          <div className="topArrow">
+            <svg viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15">
+              <g transform="translate(904.92214,-879.1482)">
+                <path d="
           m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
           -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
           0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
@@ -15,13 +18,13 @@ const NavTogglr = () => {
           -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
           -104.0616 -231.873,-231.248 z
         " fill="#eeeeee" />
-            </g>
-          </svg>
-        </div>
-        <div className="bottomArrow">
-          <svg className="invertSvgarrow" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15">
-            <g transform="translate(904.92214,-879.1482)">
-              <path d="
+              </g>
+            </svg>
+          </div>
+          <div className="bottomArrow">
+            <svg className="invertSvgarrow" viewBox="0 0 926.23699 573.74994" version="1.1" x="0px" y="0px" width="15" height="15">
+              <g transform="translate(904.92214,-879.1482)">
+                <path d="
           m -673.67664,1221.6502 -231.2455,-231.24803 55.6165,
           -55.627 c 30.5891,-30.59485 56.1806,-55.627 56.8701,-55.627 0.6894,
           0 79.8637,78.60862 175.9427,174.68583 l 174.6892,174.6858 174.6892,
@@ -31,10 +34,11 @@ const NavTogglr = () => {
           -231.5279,231.248 -231.873,231.248 -0.3451,0 -104.688,
           -104.0616 -231.873,-231.248 z
         " fill="#eeeeee" />
-            </g>
-          </svg>
-        </div>
-      </div>;
+              </g>
+            </svg>
+          </div>
+        </div>;
+    }
 }
 
 export default NavTogglr;
