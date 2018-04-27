@@ -1,8 +1,9 @@
 {
-  "main.css": "static/css/main.1f8225fe.css",
-  "main.css.map": "static/css/main.1f8225fe.css.map",
-  "main.js": "static/js/main.f8d9b9f7.js",
-  "main.js.map": "static/js/main.f8d9b9f7.js.map",
+  "main.css": "static/css/main.5d4b17d9.css",
+  "main.css.map": "static/css/main.5d4b17d9.css.map",
+  "main.js": "static/js/main.e7bfeabc.js",
+  "main.js.map": "static/js/main.e7bfeabc.js.map",
+  "static\\media\\JSICon.png": "static/media/JSICon.7f130501.png",
   "static\\media\\OptEducation.jpg": "static/media/OptEducation.3ab3b917.jpg",
   "static\\media\\bg_chennai.jpg": "static/media/bg_chennai.3bfb8377.jpg",
   "static\\media\\datacamp.svg": "static/media/datacamp.8d37c64f.svg",
@@ -10,14 +11,17 @@
   "static\\media\\down-arrow.svg": "static/media/down-arrow.8f33311b.svg",
   "static\\media\\education.jpg": "static/media/education.2ffa123d.jpg",
   "static\\media\\ham-menu.svg": "static/media/ham-menu.3c5ed26b.svg",
+  "static\\media\\lua.png": "static/media/lua.d127a322.png",
   "static\\media\\meanduniquebg.jpg": "static/media/meanduniquebg.b6dbbf37.jpg",
   "static\\media\\network.svg": "static/media/network.b6c69f5c.svg",
-  "static\\media\\nodejs.png": "static/media/nodejs.36700bee.png",
+  "static\\media\\nodejsOne.png": "static/media/nodejsOne.7aadddf3.png",
   "static\\media\\optbg_chennai.jpg": "static/media/optbg_chennai.5d43d4a2.jpg",
   "static\\media\\optmeanduniquebg.jpg": "static/media/optmeanduniquebg.bc86e167.jpg",
   "static\\media\\pdf.svg": "static/media/pdf.390ef900.svg",
   "static\\media\\profileIcon.svg": "static/media/profileIcon.89e1d52c.svg",
   "static\\media\\profile_image.jpg": "static/media/profile_image.57944086.jpg",
+  "static\\media\\python.png": "static/media/python.ca2ceddc.png",
   "static\\media\\stopwatch.svg": "static/media/stopwatch.a3e987a1.svg",
-  "static\\media\\student.svg": "static/media/student.c80716f8.svg"
+  "static\\media\\student.svg": "static/media/student.c80716f8.svg",
+  "static\\media\\trianglify.svg": "static/media/trianglify.7ba91649.svg"
 }
