@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import './component.css';
 import NavCard from './common/NavCard';
 import NavTogglr from './common/NavTogglr';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import TopBar from "./TopBar";
 
 
@@ -12,9 +12,8 @@ const resdata = [
     {'mesg': 'Me and Unique','link':'/meandunique' },
     {'mesg': 'Alma mater','link':'/almamater' },
     {'mesg': 'As a Dev','link':'/asadev' },
-    {'mesg': 'Project Experience','link':'/projectexperience' },
-    {'mesg': 'Communities','link':'/communities' },
-    {'mesg': 'Social','link':'/social' },
+    {'mesg': 'Choice of Tools','link':'/choiceoftools' },
+    {'mesg': 'Communities & Social','link':'/communitiesandsocial' },
     {'mesg': 'Credits','link':'/credits'},
 ]
 
@@ -55,10 +54,10 @@ const NavElement = (props) => {
     const { mesg, link } = props.data;
     const { onClick } = props;
     return(
-        <Link to={link}>
+        <NavLink to={link} activeClassName="imActive">
             <NavCard key={mesg} onClick={onClick}>
                 <div>{mesg}</div>
             </NavCard>
-        </Link>
+        </NavLink>
     );
 }
