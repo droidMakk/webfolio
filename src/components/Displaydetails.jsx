@@ -1,7 +1,9 @@
 import React,{ Component } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import './component.css';
+import './routeswitcher.css'
 import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev, ChoiceOfTools } from './NavComponents';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 import NavTogglr from "./common/NavTogglr";
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
@@ -76,46 +78,37 @@ class Displaydetails extends Component {
   }
 
   render() {
-    return (
-      <div className="displayDetails">
+    return <div className="displayDetails">
         <TopBar />
-        <div
-          className="navswitch mainTogglr"
-          id="mainTogglr"
-          onClick={() => {
+        <div className="navswitch mainTogglr" id="mainTogglr" onClick={() => {
             this.toggleMainNav();
-          }}
-          onFocusCapture={this.focusHandler}
-          tabIndex="1"
-        >
+          }} onFocusCapture={this.focusHandler} tabIndex="1">
           {this.ViewTogglr()}
         </div>
-        <div
-          id="subTogglrProf"
-          className="navswitch subTogglr"
-          onClick={this.showProfile}
-        >
+        <div id="subTogglrProf" className="navswitch subTogglr" onClick={this.showProfile}>
           <img src={profileIcon} alt="my-profile" className="subTogglrIcon" />
         </div>
-        <div
-          id="subTogglrNav"
-          className="navswitch subTogglr"
-          onClick={this.showNavigator}
-        >
+        <div id="subTogglrNav" className="navswitch subTogglr" onClick={this.showNavigator}>
           <img src={HamMenu} alt="ham-menu" className="subTogglrIcon" />
         </div>
         <div className="displayContainer">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/whoami" component={WhoAmI} />
-            <Route exact path="/meandunique" component={MeAndUnique} />
-            <Route exact path="/almamater" component={AlmaMater} />
-            <Route exact path="/asadev" component={AsaDev} />
-            <Route exact path="/choiceoftools" component={ChoiceOfTools} />
-          </Switch>
+          <Route render={({ location }) => <div>
+                <Route exact path="/" render={() => <Redirect to="/home" />} />
+                <TransitionGroup>
+                  <CSSTransition classNames="routeswitch" key={location.key} timeout={300}>
+                    <Switch location={location}>
+                      <Route exact path="/home" component={Home} />
+                      <Route exact path="/whoami" component={WhoAmI} />
+                      <Route exact path="/meandunique" component={MeAndUnique} />
+                      <Route exact path="/almamater" component={AlmaMater} />
+                      <Route exact path="/asadev" component={AsaDev} />
+                      <Route exact path="/choiceoftools" component={ChoiceOfTools} />
+                    </Switch>
+                  </CSSTransition>
+                </TransitionGroup>
+              </div>} />
         </div>
-      </div>
-    );
+      </div>;
   }
 }
 

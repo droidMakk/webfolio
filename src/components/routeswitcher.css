@@ -1,0 +1,8 @@
+.routeswitch-enter {
+    opacity: 0.01;
+}
+
+.routeswitch-enter.routeswitch-enter-active {
+   opacity: 1;
+   transition: opacity 500ms ease-in;
+}

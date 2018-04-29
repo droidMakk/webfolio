@@ -7,7 +7,7 @@ import TopBar from "./TopBar";
 
 
 const resdata = [
-    {'mesg': 'Home','link':'/'},
+    {'mesg': 'Home','link':'/home'},
     {'mesg': 'Who Am I?','link':'/whoami' },
     {'mesg': 'Me and Unique','link':'/meandunique' },
     {'mesg': 'Alma mater','link':'/almamater' },

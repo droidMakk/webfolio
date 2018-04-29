@@ -5,12 +5,13 @@ class Slicker extends Component{
 
     constructor(){
         super();
+        var settings = null;
         this.state = { showSlides: 1 };
         window.addEventListener("resize",() => {
             if (window.innerWidth > 450) {
-              var settings = {
+              settings = {
                     speed: 400,
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                     autoplay: true,
                     arrows: true,
