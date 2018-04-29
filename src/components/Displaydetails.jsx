@@ -64,7 +64,7 @@ class Displaydetails extends Component {
   }
 
   showProfile() {
-    this.toggleMainNav();
+    if(this.state.isNavOpen){ this.toggleMainNav(); }
     document.getElementById("mainProfileStyle").style.display = "block";
     setTimeout(() => {
       document.getElementById("mainProfileStyle").style.opacity = 1;
