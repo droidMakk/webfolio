@@ -6,7 +6,27 @@ class Slicker extends Component{
     constructor(){
         super();
         this.state = { showSlides: 1 };
-        if(window.innerWidth >= 450){ this.setState({ showSlides: 2 }) }
+        window.addEventListener("resize",() => {
+            if (window.innerWidth > 450) {
+              var settings = {
+                    speed: 400,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    arrows: true,
+                    dots: true
+                };
+            } else {
+                settings = {
+                    speed: 400,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    arrows: true,
+                    dots: true
+                };
+            }
+        })
     }
 
     render(){
@@ -19,7 +39,7 @@ class Slicker extends Component{
         autoplay: true,
         arrows: true,
         dots: true
-    };
+        };
 
     return <div style={{ marginTop: 10 }}>
         <Slider {...settings}>
