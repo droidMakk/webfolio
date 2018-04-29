@@ -32,8 +32,8 @@ class Displaydetails extends Component {
   state = { isNavOpen: false };
 
   focusHandler(ev){
-    document.getElementById("mainTogglr").addEventListener('focusout',this.toggleMainNav);
-  }
+      document.getElementById("mainTogglr").addEventListener('focusout',() => { if(this.state.isNavOpen){ this.toggleMainNav(); } });
+    }
 
   toggleMainNav() {
     if (this.state.isNavOpen) {
@@ -56,7 +56,7 @@ class Displaydetails extends Component {
   }
 
   showNavigator() {
-    this.toggleMainNav();
+    if(this.state.isNavOpen){ this.toggleMainNav(); }
     document.getElementById("navigatorHolder").style.display = "block";
     setTimeout(() => {
       document.getElementById("navigatorHolder").style.opacity = 1;
