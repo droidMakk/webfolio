@@ -2,26 +2,29 @@ import React from 'react';
 import ImageLoader from 'react-load-image';
 import MeAndUniqueBg from '../../assets/meanduniquebg.jpg';
 import optmeanduniquebg from "../../assets/optimized/optmeanduniquebg.jpg";
+import AnimatonComponent from '../common/AnimationComponent';
 
 
 const MeAndUnique = () => {
     return(
-        <div className="displaydetailcard">
-            <p className="displaydetailTitle"><span role="img" aria-label="unique" >🛸</span>Me And Unique...</p>
-            <hr/>
-            <p className="courgette bottomMargin10">
-                Always remember that you are absolutely unique. Just like everyone else.
-            </p>
-            <p className="alignRight">-Margaret Mead</p>
-            <MAUImageLoader />
-            <div className="uniqueList">
-                <div>Tech Savy</div>
-                <div>Quick Grasper of Modern Techs</div>
-                <div>Learn, Evolve &amp; Grow</div>
-                <div>Open Source Enthusiast</div>
-                <div>BYOD</div>
+        <AnimatonComponent>
+            <div className="displaydetailcard">
+                <p className="displaydetailTitle"><span role="img" aria-label="unique" >🛸</span>Me And Unique...</p>
+                <hr/>
+                <p className="courgette bottomMargin10">
+                    Always remember that you are absolutely unique. Just like everyone else.
+                </p>
+                <p className="alignRight">-Margaret Mead</p>
+                <MAUImageLoader />
+                <div className="uniqueList">
+                    <div>Tech Savy</div>
+                    <div>Quick Grasper of Modern Techs</div>
+                    <div>Learn, Evolve &amp; Grow</div>
+                    <div>Open Source Enthusiast</div>
+                    <div>BYOD</div>
+                </div>
             </div>
-        </div>
+        </AnimatonComponent>
     )
 } 
 

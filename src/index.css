@@ -33,3 +33,77 @@ p, h3, h4, h2, h1, h5 {
 .topBar {
   display: none;
 }
+
+/* Loading CSS */
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  position: relative;
+  top: 30vh;
+  left: 15vw;
+}
+
+.lds-dual-ring:after {
+  width: 150px !important;
+  height: 150px !important;
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.LoadHolder {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.LoadingText {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+  font-size: -webkit-xxx-large;
+  color: rebeccapurple;
+}
+
+.loaderTweak {
+  flex: 1;
+  background-color: rebeccapurple;
+  height: 100%;
+  width: 100%;
+  box-shadow: -3px 0px 2px 3px rgba(0, 0, 0, 0.26);
+}
+
+@media only screen and (max-width: 450px) {
+
+  .LoadHolder{
+    flex-direction: column-reverse;
+  }
+
+  .LoadingText{
+    position: relative;
+    top: 15vh;
+  }
+
+  .lds-dual-ring{
+    top: 15vh;
+    left: 30vw;
+  }
+
+}

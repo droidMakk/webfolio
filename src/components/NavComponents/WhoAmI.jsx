@@ -1,42 +1,63 @@
-import React from 'react';
+import React,{ Component } from 'react';
 import './navcomponents.css';
 import ImageLoader from 'react-load-image';
 import bg_chennai from '../../assets/bg_chennai.jpg';
 import optbg_chennai from "../../assets/optimized/optbg_chennai.jpg";
+import AnimationComponent from '../common/AnimationComponent';
 
 
-const WhoAmI = () => {
-    return(
-        <div className="displaydetailcard">
-            <p className="displaydetailTitle"><span role="img" aria-label="thinking" >🤔</span>Who Am I?</p>
-            <hr/>
-            <br/>
-            <p className="courgette bottomMargin10">
-            Hailing from <strong>மத்ராசபட்டினம் </strong> (Chennai) of Tamizh Nadu in
-            India...
-            </p>
-            <div>
-                <ChennaiBgLoader />
-                <Chennai/>
+class WhoAmI extends Component {
+    
+    constructor(props) {
+        super(props);
+
+        this.state = {
+        isVisible: true
+        };
+
+        this.closeComponent = ev => {
+        ev.preventDefault();
+        this.setState({isVisible: false});
+
+        setTimeout(() => {this.props.history.push("/")}, 300);
+        };
+    }
+
+    render(){
+        return(
+        <AnimationComponent>
+            <div className="displaydetailcard">
+                <p className="displaydetailTitle"><span role="img" aria-label="thinking" >🤔</span>Who Am I?</p>
+                <hr/>
+                <br/>
+                <p className="courgette bottomMargin10">
+                Hailing from <strong>மத்ராசபட்டினம் </strong> (Chennai) of Tamizh Nadu in
+                India...
+                </p>
+                <div>
+                    <ChennaiBgLoader />
+                    <Chennai/>
+                </div>
+                <br/>
+                <div className="courgette">
+                    Aspiring to become a professionally equipped, efficient
+                    &amp; community driven <br/>
+                    <br/>
+                    <span role="img" aria-label="creative" >😜</span>Creative Too... 
+                    <br/>
+                    <br/>
+                    <strong>
+                        Full Stack Developer
+                        <hr/>
+                        <strong>MERN</strong> &amp; IoT
+                    </strong>
+                    <br/>
+                    <div className="devImage"><span role="img" aria-label="geek" >👨‍💻</span></div>
+                </div>
             </div>
-            <br/>
-            <div className="courgette">
-                Aspiring to become a professionally equipped, efficient
-                &amp; community driven <br/>
-                <br/>
-                <span role="img" aria-label="creative" >😜</span>Creative Too... 
-                <br/>
-                <br/>
-                <strong>
-                    Full Stack Developer
-                    <hr/>
-                    <strong>MERN</strong> &amp; IoT
-                </strong>
-                <br/>
-                <div className="devImage"><span role="img" aria-label="geek" >👨‍💻</span></div>
-            </div>
-        </div>
-    )
+        </AnimationComponent>
+        );
+    }
 }
 
 const OptimalChennaiBg = () => {

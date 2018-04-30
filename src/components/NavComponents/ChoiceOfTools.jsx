@@ -2,17 +2,20 @@ import React,{ Component } from 'react';
 import { VSCode, Sublime, Jupyter, PostMan, CodeCept, Docker, Trello, PM2, Sinon, Azure, Aws, Git, Firebase } from '../../assets/';
 import SlickCard from "./SlickDev/SlickCard";
 import Slicker from "./SlickDev/Slicker";
+import AnimationComponent from '../common/AnimationComponent';
+
 
 
 class ChoiceOfTools extends Component{
+
     render(){
-        return <div className="displaydetailcard">
+        return <AnimationComponent><div className="displaydetailcard">
             <p className="displaydetailTitle">
               <span role="img" aria-label="tools">
                 ⚒
               </span> Choice of Tools
-              <hr/>
             </p>
+            <hr/>
             <div>
             <br/>
             <h1 className="thinText" >Editors</h1>
@@ -51,7 +54,8 @@ class ChoiceOfTools extends Component{
               </Slicker>
             </div>
               <br />
-          </div>;
+          </div>
+          </AnimationComponent>;
     }
 }
 

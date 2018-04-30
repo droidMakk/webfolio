@@ -25,6 +25,11 @@ import Azure from './Cloud/Azure.png';
 import Aws from './Cloud/Aws.png';
 import Git from './Cloud/Git.png';
 import Firebase from './Cloud/Firebase.png';
+import studentIcon from './student.svg';
+import DataCamp from './datacamp.svg';
+import EduBanner from './education.jpg';
+import OptEduBanner from "./optimized/OptEducation.jpg";
+import Udemy from './udemy.png';
 
 
 
@@ -32,4 +37,4 @@ import Firebase from './Cloud/Firebase.png';
 export { ReactIcon, Express, Pug, SocketIO, Jquery, VSCode, Sublime, 
     Jupyter, PostMan, CodeCept, Docker, Trello, PM2, Sinon,
 nodejsIco, python, LuaIco, HTML_Logo, JSICon, Cssico,
-Ansible, Jenkins, Vsts, Azure, Aws, Git, Firebase };
+Ansible, Jenkins, Vsts, Azure, Aws, Git, Firebase, studentIcon, DataCamp, EduBanner, OptEduBanner, Udemy };

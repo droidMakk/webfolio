@@ -1,9 +1,7 @@
 import React,{ Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import './component.css';
-import './routeswitcher.css'
 import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev, ChoiceOfTools } from './NavComponents';
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 import NavTogglr from "./common/NavTogglr";
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
@@ -94,18 +92,16 @@ class Displaydetails extends Component {
         <div className="displayContainer">
           <Route render={({ location }) => <div>
                 <Route exact path="/" render={() => <Redirect to="/home" />} />
-                <TransitionGroup>
-                  <CSSTransition classNames="routeswitch" key={location.key} timeout={300}>
-                    <Switch location={location}>
-                      <Route exact path="/home" component={Home} />
-                      <Route exact path="/whoami" component={WhoAmI} />
-                      <Route exact path="/meandunique" component={MeAndUnique} />
-                      <Route exact path="/almamater" component={AlmaMater} />
-                      <Route exact path="/asadev" component={AsaDev} />
-                      <Route exact path="/choiceoftools" component={ChoiceOfTools} />
-                    </Switch>
-                  </CSSTransition>
-                </TransitionGroup>
+                <div>
+                      <Switch location={location}>
+                        <Route exact path="/home" component={Home} />
+                        <Route exact path="/whoami" component={WhoAmI} />
+                        <Route exact path="/meandunique" component={MeAndUnique} />
+                        <Route exact path="/almamater" component={AlmaMater} />
+                        <Route exact path="/asadev" component={AsaDev} />
+                        <Route exact path="/choiceoftools" component={ChoiceOfTools} />
+                      </Switch>
+                </div>
               </div>} />
         </div>
       </div>;

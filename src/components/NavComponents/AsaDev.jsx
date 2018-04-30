@@ -3,9 +3,11 @@ import './AsaDev.css';
 import Technologies from './SlickDev/Technologies';
 import DevOPS from './SlickDev/DevOPS';
 import Frameworks from './SlickDev/Frameworks';
+import AnimationComponent from '../common/AnimationComponent';
 
 const AsaDev = () => {
-    return <div className="displaydetailcard">
+    return <AnimationComponent>
+    <div className="displaydetailcard">
         <p className="displaydetailTitle">
           <span role="img" aria-label="devmode">
             👨‍💻
@@ -26,7 +28,8 @@ const AsaDev = () => {
             <DevOPS />
             <br/>
         </div>
-      </div>;
+      </div>
+      </AnimationComponent>;
 }
 
 export { AsaDev };
