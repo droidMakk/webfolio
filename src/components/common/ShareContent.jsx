@@ -1,4 +1,4 @@
-import React,{ Component } from 'react';
+import React,{ Component, Fragment } from 'react';
 import sharenetwork from '../../assets/network.svg';
 import pdficon from '../../assets/pdf.svg';
 import downIcon from "../../assets/down-arrow.svg";
@@ -14,29 +14,41 @@ class ShareContent extends Component {
                 text: 'Full Stack Dev ✊!',
                 url: 'https://droidmakk.ml'
             })
-                .catch(() => alert('That\'s Rude 🤨'));
+                .catch(() => {  });
         }else{
             alert('🤔 I Think... \nMaybe its not \nSupported!');
         }
     }
 
+    downloadPdf(){
+        window.location = "https://tinyurl.com/droidmakk";
+    }
+
     render(){
-        return <div className="shareContent">
-            <div className="shareHolder" onClick={this.shareMe.bind(this)}>
-              <img className="shareIcon" src={sharenetwork} alt="share" />
+        return <Fragment>
+            <div className="exportAll">
+              <div className="exportPdf">
+                <div className="pdfText marginAuto" onClick={this.downloadPdf}>
+                  <h3 className="thinText">Download as PDF</h3>
+                </div>
+                <div className="pdfIcon marginAuto" onClick={this.downloadPdf}>
+                  <img className="pdfImage" src={pdficon} alt="PDF Icon" />
+                </div>
+              </div>
+              <div className="shareHolder">
+                <img className="shareIcon" onClick={this.shareMe.bind(this)} src={sharenetwork} alt="share" />
+                <span
+                  style={{
+                    fontSize: 20,
+                    verticalAlign: "-webkit-baseline-middle",
+                    paddingLeft: 5
+                  }}
+                >
+                  Share
+                </span>
+              </div>
             </div>
-            <div className="exportPdf">
-              <div className="pdfText marginAuto">
-                <h3 className="thinText">Download as PDF</h3>
-              </div>
-              <div className="pdfIcon marginAuto">
-                <img className="pdfImage" src={pdficon} alt="PDF Icon" />
-              </div>
-              <div className="pdfIcon marginAuto">
-                <img className="" src={downIcon} alt="PDF Icon" />
-              </div>
-            </div>
-          </div>;
+          </Fragment>;
     }
 }
 

@@ -27,8 +27,8 @@ import Git from './Cloud/Git.png';
 import Firebase from './Cloud/Firebase.png';
 import studentIcon from './student.svg';
 import DataCamp from './datacamp.svg';
-import EduBanner from './education.jpg';
-import OptEduBanner from "./optimized/OptEducation.jpg";
+import EduBanner from "./optimized/OptEducation.jpg";
+import OptEduBanner from "./sqip/education.svg";
 import Udemy from './udemy.png';
 
 

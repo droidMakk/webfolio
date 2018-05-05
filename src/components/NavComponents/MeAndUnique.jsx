@@ -1,7 +1,7 @@
 import React from 'react';
 import ImageLoader from 'react-load-image';
-import MeAndUniqueBg from '../../assets/meanduniquebg.jpg';
-import optmeanduniquebg from "../../assets/optimized/optmeanduniquebg.jpg";
+import MeAndUniqueBg from "../../assets/optimized/optmeanduniquebg.jpg";
+import optmeanduniquebg from "../../assets/sqip/meanduniquebg.svg";
 import AnimatonComponent from '../common/AnimationComponent';
 
 

@@ -43,14 +43,20 @@ class Displaydetails extends Component {
 
       document.getElementById("subTogglrProf").style.bottom = "40px";
       document.getElementById("subTogglrProf").style.opacity = "0";
+
+      document.querySelector("#mainTogglr > .navswitchHolder > .bottomArrow").style.transform = "translateY(-13px)";
+      document.querySelector("#mainTogglr > .navswitchHolder > .topArrow").style.transform = "translateY(24px)";
       this.setState({ isNavOpen: false });
     } else {
       // Open Nav
       document.getElementById("subTogglrNav").style.right = "100px";
       document.getElementById("subTogglrNav").style.opacity = "1";
-
+      
       document.getElementById("subTogglrProf").style.bottom = "110px";
       document.getElementById("subTogglrProf").style.opacity = "1";
+      
+      document.querySelector("#mainTogglr > .navswitchHolder > .bottomArrow").style.transform = "translateY(-1px)";
+      document.querySelector("#mainTogglr > .navswitchHolder > .topArrow").style.transform = "translateY(15px)";
       this.setState({ isNavOpen: true });
     }
   }
