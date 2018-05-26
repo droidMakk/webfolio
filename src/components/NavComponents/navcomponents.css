@@ -68,7 +68,7 @@
 
 .uniqueList > div::before{
     color: #00000038;
-    content: "\25CF\2015";
+    content: "\25CF ";
     display: inline;
     vertical-align: initial;
 }
@@ -76,4 +76,5 @@
 .chennaiBG{
     margin-bottom: -17px;
     padding-bottom: 0px;
+    transition: all 0.5s;
 }

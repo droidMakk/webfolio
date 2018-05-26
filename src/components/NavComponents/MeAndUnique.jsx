@@ -17,11 +17,11 @@ const MeAndUnique = () => {
                 <p className="alignRight">-Margaret Mead</p>
                 <MAUImageLoader />
                 <div className="uniqueList">
-                    <div>Tech Savy</div>
-                    <div>Quick Grasper of Modern Techs</div>
-                    <div>Learn, Evolve &amp; Grow</div>
-                    <div>Open Source Enthusiast</div>
-                    <div>BYOD</div>
+                    <div> Tech Savy</div>
+                    <div> Quick Grasper of Modern Techs</div>
+                    <div> Learn, Evolve &amp; Grow</div>
+                    <div> Open Source Enthusiast</div>
+                    <div> BYOD</div>
                 </div>
             </div>
         </AnimatonComponent>
