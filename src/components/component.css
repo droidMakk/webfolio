@@ -103,13 +103,6 @@
     cursor: pointer;
 }
 
-.exportPdf{
-    cursor: pointer;
-}
-
-.navswitch.mainTogglr > * {
-    /* display: none; */
-}
 
 #mainTogglr>.navswitchHolder>.bottomArrow{
     transform: translateY(-13px);

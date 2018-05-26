@@ -36,7 +36,7 @@
     background-color: #EEEE;
     box-sizing: border-box;
     overflow: hidden;
-    width: -webkit-fill-available;
+    width: stretch;
     font-size: x-small;
     margin-top: 36px;
 }
@@ -69,11 +69,13 @@
 }
 
 .exportPdf{
+    cursor: pointer;
     display: flex;
     margin: auto;
     border-radius: 2px;
     background-color: #EEEE;
-    padding: 0px 5px 0px 5px;
+    font-size: 12px;
+    padding: 0px 12px 0px 12px;
     height: 47px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16),
     0 3px 6px rgba(0, 0, 0, 0.23);

@@ -19,8 +19,8 @@
     "react-transition-group": "^2.3.1"
   },
   "scripts": {
-    "start": "set HTTPS=true&&react-scripts start",
-    "build": "set HTTPS=true&&react-scripts build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "prepublish": "yarn build",

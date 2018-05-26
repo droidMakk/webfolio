@@ -13,7 +13,7 @@ const resdata = [
     {'mesg': 'Alma mater','link':'/almamater' },
     {'mesg': 'As a Dev','link':'/asadev' },
     {'mesg': 'Choice of Tools','link':'/choiceoftools' },
-    {'mesg': 'Communities & Social','link':'/communitiesandsocial' },
+    {'mesg': 'Being Social','link':'/communitiesandsocial' },
     {'mesg': 'Credits','link':'/credits'},
 ]
 

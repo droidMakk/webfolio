@@ -44,27 +44,7 @@ class WhoAmI extends Component {
             <Chennai />
           </div>
           <br />
-          <div className="courgette">
-            Aspiring to become a professionally equipped, efficient &amp;
-            community driven <br />
-            <br />
-            <span role="img" aria-label="creative">
-              😜
-            </span>Creative Too...
-            <br />
-            <br />
-            <strong>
-              Full Stack Developer
-              <hr />
-              <strong>MERN</strong> &amp; IoT
-            </strong>
-            <br />
-            <div className="devImage">
-              <span role="img" aria-label="geek">
-                👨‍💻
-              </span>
-            </div>
-          </div>
+            <WhoIBecome/>
         </div>
       </AnimationComponent>
     );
@@ -96,6 +76,32 @@ const Chennai = () => {
             <span>i</span>
         </p>
     )
+}
+
+const WhoIBecome = () => {
+  return (
+    <div className="courgette">
+      Aspiring to become a professionally equipped, efficient &amp;
+            community driven <br />
+      <br />
+      <span role="img" aria-label="creative">
+        😜
+            </span>Creative Too...
+            <br />
+      <br />
+      <strong>
+        Full Stack Developer
+              <hr />
+        <strong>MERN</strong> &amp; IoT
+            </strong>
+      <br />
+      <div className="devImage">
+        <span role="img" aria-label="geek">
+          👨‍💻
+              </span>
+      </div>
+    </div>
+  );
 }
 
 export { WhoAmI };

@@ -1,7 +1,6 @@
 import React,{ Component, Fragment } from 'react';
 import sharenetwork from '../../assets/network.svg';
 import pdficon from '../../assets/pdf.svg';
-import downIcon from "../../assets/down-arrow.svg";
 import './ShareContent.css';
 
 class ShareContent extends Component {
