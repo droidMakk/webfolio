@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import './Home.css'
 import AnimationComponent from '../common/AnimationComponent';
 
-const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+const days = ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var timer = null;
 class Home extends Component {
 
-
+    
     constructor(){
         super();
         this.state = { 
@@ -14,14 +15,14 @@ class Home extends Component {
             seconds: new Date().getSeconds(),
             meridian: (new Date().getHours() > 12) ? 'PM' : 'AM',
             date: (new Date()).getDate(),
-            day: days[(new Date()).getDay()-1],
+            day: days[(new Date()).getDay()],
             year: (new Date()).getFullYear()
         };
     }
 
     componentDidMount(){
 
-        setInterval(() => {
+        timer = setInterval(() => {
             var dt = new Date();
             this.setState({
               hours:
@@ -32,11 +33,17 @@ class Home extends Component {
               seconds: dt.getSeconds(),
               meridian: dt.getHours() > 12 ? "PM" : "AM",
               date: dt.getDate(),
-              day: days[dt.getDay()-1],
+              day: days[dt.getDay()],
               year: dt.getFullYear()
             });
         },1000);
-    };
+    }
+
+    
+    componentWillUnmount() {
+        clearInterval(timer);
+    }
+    
     
 
   render() {
