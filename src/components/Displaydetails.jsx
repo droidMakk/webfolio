@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
 import './component.css';
-import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev, ChoiceOfTools } from './NavComponents';
+import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev, ChoiceOfTools, Social } from './NavComponents';
 import NavTogglr from "./common/NavTogglr";
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
@@ -106,6 +106,7 @@ class Displaydetails extends Component {
                         <Route exact path="/almamater" component={AlmaMater} />
                         <Route exact path="/asadev" component={AsaDev} />
                         <Route exact path="/choiceoftools" component={ChoiceOfTools} />
+                        <Route exact path="/social" component={Social} />
                       </Switch>
                 </div>
               </div>} />

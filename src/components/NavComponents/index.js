@@ -4,3 +4,4 @@ export * from './MeAndUnique';
 export * from './WhoAmI';
 export * from './AsaDev';
 export * from './ChoiceOfTools';
+export * from './Social';

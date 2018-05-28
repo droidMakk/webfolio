@@ -1,22 +1,17 @@
 import React,{ Component } from 'react';
-import { VSCode, Sublime, Jupyter, PostMan, CodeCept, Docker, Trello, PM2, Sinon, Azure, Aws, Git, Firebase } from '../../assets/';
+import { PostMan, CodeCept, Docker, Trello, PM2, Sinon, Azure, Aws, Git, Firebase } from '../../assets/';
 import SlickCard from "./SlickDev/SlickCard";
 import Slicker from "./SlickDev/Slicker";
 import AnimationComponent from '../common/AnimationComponent';
-import { HorizontalBar } from "react-chartjs-2";
-import Card from "../common/Card";
+import { Doughnut } from "react-chartjs-2";
 
 const editordata = {
   datasets: [
     {
-      data: [89, 75, 81],
-      backgroundColor: [
-        "#61dafb",
-        "#123f21",
-        "#5f6972"
-      ],
+      data: [89, 75, 65],
+      backgroundColor: ["#0076c6", "#f79202", "#69c085"],
       label: "Editors"
-    },
+    }
   ],
   labels: ["Code", "Sublime", "Atom"]
 };
@@ -35,7 +30,7 @@ class ChoiceOfTools extends Component{
             <div>
               <br/>
               <h1 className="thinText" >Editors</h1>
-                <HorizontalBar data={editordata} />
+                <Doughnut data={editordata} />
             </div>
             <div>
               <br />
@@ -69,16 +64,6 @@ class ChoiceOfTools extends Component{
           </div>
           </AnimationComponent>;
     }
-}
-
-const TextEditor = () => {
-  return(
-    <Slicker>
-      <SlickCard cardImg={VSCode} cardImgalt="VS Code" titleText="VS Code" />
-      <SlickCard cardImg={Sublime} cardImgalt="Sublime" titleText="Sublime" />
-      <SlickCard cardImg={Jupyter} cardImgalt="Jupyter" titleText="Jupyter" />
-    </Slicker>
-  )
 }
 
 export { ChoiceOfTools };
