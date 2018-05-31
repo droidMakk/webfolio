@@ -1,0 +1,49 @@
+.social-card-img{
+    width: 20px;
+    margin: auto;
+}
+
+.socialCards{
+    display: flex;
+    overflow-x: scroll;    
+}
+
+.social-card{
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+.social-link{
+    display: inline-flex;
+    flex-direction: column;
+    height: 45px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.social-title{
+    text-align: center;
+    color: black;
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* .social-title:hover{
+    opacity: 1;
+    transition: all 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+} */
+
+.social-card-holder{
+    box-sizing: border-box;
+    margin: 20px 0px 20px 0px;
+}
+
+.tools-list > li{
+    list-style: none;
+    font-size: large;
+}
+
+.tools-list > li::before{
+    content: "\25CF ";
+    color: #717373;
+}

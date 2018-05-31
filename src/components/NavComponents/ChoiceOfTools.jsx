@@ -29,41 +29,58 @@ class ChoiceOfTools extends Component{
             <hr/>
             <div>
               <br/>
-              <h1 className="thinText" >Editors</h1>
+              <h2 className="thinText" >Editors</h2>
                 <Doughnut data={editordata} />
             </div>
             <div>
               <br />
-              <h1 className="thinText" >Tools</h1>
-              <Slicker>
-                <SlickCard cardImg={PostMan} cardImgalt="Postman" titleText="Postman" />
-                <SlickCard cardImg={CodeCept} cardImgalt="CodeCept" titleText="CodeCept JS" />
-                <SlickCard cardImg={Sinon} cardImgalt="Sinon" titleText="Sinon JS" />
-              </Slicker>
+              <h2 className="thinText" >Tools</h2>
+              <ul className="tools-list">
+                <li>Postman</li>
+                <li>CodeceptJS</li>
+                <li>Sinon</li>
+                <li>Trello</li>
+                <li>PM2</li>
+              </ul>
             </div>
             <div>
               <br />
-              <h1 className="thinText" >More Tools</h1>
-              <Slicker>
-                <SlickCard cardImg={PM2} cardImgalt="PM2" titleText="PM2 JS" />
-                <SlickCard cardImg={Docker} cardImgalt="Docker" titleText="Docker" />
-                <SlickCard cardImg={Trello} cardImgalt="Trello" titleText="Trello" />
-              </Slicker>
-            </div>
-            <div>
-              <br />
-              <h1 className="thinText" >Cloud</h1>
-              <Slicker>
-                <SlickCard cardImg={Azure} cardImgalt="Azure" titleText="Azure" />
-                <SlickCard cardImg={Aws} cardImgalt="Aws" titleText="AWS" />
-                <SlickCard cardImg={Git} cardImgalt="Git" titleText="Pages" />
-                <SlickCard cardImg={Firebase} cardImgalt="Firebase" titleText="Firebase" />
-              </Slicker>
+              <h2 className="thinText" >Cloud</h2>
+              <ul className="tools-list">
+                <li>Azure</li>
+                <li>Aws</li>
+                <li>Firebase</li>
+                <li>Github Pages</li>
+              </ul>
             </div>
               <br />
           </div>
           </AnimationComponent>;
     }
+}
+
+const Tools = () => {
+  return(
+    <Slicker>
+      <SlickCard cardImg={PostMan} cardImgalt="Postman" titleText="Postman" />
+      <SlickCard cardImg={CodeCept} cardImgalt="CodeCept" titleText="CodeCept JS" />
+      <SlickCard cardImg={Sinon} cardImgalt="Sinon" titleText="Sinon JS" />
+      <SlickCard cardImg={PM2} cardImgalt="PM2" titleText="PM2 JS" />
+      <SlickCard cardImg={Docker} cardImgalt="Docker" titleText="Docker" />
+      <SlickCard cardImg={Trello} cardImgalt="Trello" titleText="Trello" />
+    </Slicker>
+  )
+}
+
+const Hosting = () => {
+  return(
+    <Slicker>
+      <SlickCard cardImg={Azure} cardImgalt="Azure" titleText="Azure" />
+      <SlickCard cardImg={Aws} cardImgalt="Aws" titleText="AWS" />
+      <SlickCard cardImg={Git} cardImgalt="Git" titleText="Pages" />
+      <SlickCard cardImg={Firebase} cardImgalt="Firebase" titleText="Firebase" />
+    </Slicker>
+  )
 }
 
 export { ChoiceOfTools };
