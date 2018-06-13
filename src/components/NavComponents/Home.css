@@ -9,6 +9,13 @@
     box-sizing: border-box;
 }
 
+.social-con{
+    width: 17px;
+    vertical-align: sub;
+    padding: 2px;
+    margin-left: 5px;
+}
+
 .holder > p{
     font-size: 40px;
     font-weight: lighter;

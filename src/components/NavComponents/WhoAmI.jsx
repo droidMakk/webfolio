@@ -98,7 +98,7 @@ const WhoIBecome = () => {
       <div className="devImage">
         <span role="img" aria-label="geek">
           👨‍💻
-              </span>
+        </span>
       </div>
     </div>
   );

@@ -35,9 +35,7 @@ const AlmaMater = () => {
             <br />
             <img src={DataCamp} alt="Data Camp" className="eduicon" /> &nbsp; SQL & R from DataCamp
             <br />
-            <br />
-            <img src={Udemy} alt="Udemy" className="eduicon" /> &nbsp; React-Native Certification from Udemy
-            <br />
+            <img src={Udemy} alt="Udemy" className="eduicon" /> &nbsp; React Native Certification from Udemy
             <br />
           </p>
           <div>
