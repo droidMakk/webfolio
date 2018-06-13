@@ -1,6 +1,10 @@
 .social-card-img{
-    width: 20px;
+    width: 40px;
     margin: auto;
+    filter: grayscale(1);
+}
+.social-card-img :hover{
+    filter: grayscale(0);
 }
 
 .socialCards{
