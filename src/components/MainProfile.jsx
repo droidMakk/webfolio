@@ -4,8 +4,6 @@ import NavTogglr from './common/NavTogglr';
 import './component.css';
 import profie_image from '../assets/profile_image.jpg'; 
 import dev_bg from '../assets/optimized/dev_bg.jpg';
-import optprofile_image from '../assets/sqip/profile_image.svg';
-import ImageLoader from "react-load-image";
 
 class MainProfile extends Component {
 
@@ -22,27 +20,20 @@ class MainProfile extends Component {
                 <NavTogglr/>
             </div>
             <div className="imageHolder" style={inLinImageBg}>
-              <ChennaiBgLoader/>
+              <ProfileImage/>
             </div>
             <TagDetails />
           </div>;
     }
     
+} 
+
+const ProfileImage = () => {
+    return (
+        <img src={profie_image} alt="Profile Pic" className="imagebanner"/>
+    )
 }
 
-const ChennaiBgLoader = () => {
-  return <ImageLoader src={profie_image}>
-      <img alt="Profile Pic" className="imagebanner" />
-      <div>Error Loading Image!</div>
-      <OptimalProfileImage />
-      {/* <RingLoader/> */}
-    </ImageLoader>;
-};
-
-
-const OptimalProfileImage = () => {
-  return <img alt="Profile Pic" src={optprofile_image} className="imagebanner" />;
-};
 
 const inLinImageBg = {
     backgroundImage: "url(" + dev_bg + ")",
