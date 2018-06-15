@@ -20,7 +20,7 @@ class ChoiceOfTools extends Component{
         return <AnimationComponent><div className="displaydetailcard">
             <p className="displaydetailTitle">
               <span role="img" aria-label="tools">
-                ⚒
+                ⚔️
               </span> Choice of Tools
             </p>
             <hr/>

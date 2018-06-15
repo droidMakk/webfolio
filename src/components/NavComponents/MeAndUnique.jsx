@@ -1,7 +1,5 @@
 import React from 'react';
-import ImageLoader from 'react-load-image';
 import MeAndUniqueBg from "../../assets/optimized/optmeanduniquebg.jpg";
-import optmeanduniquebg from "../../assets/sqip/meanduniquebg.svg";
 import AnimatonComponent from '../common/AnimationComponent';
 
 
@@ -15,7 +13,7 @@ const MeAndUnique = () => {
                     Always remember that you are absolutely unique. Just like everyone else.
                 </p>
                 <p className="alignRight">-Margaret Mead</p>
-                <MAUImageLoader />
+                <MeAndUniqueBga />
                 <div className="uniqueList">
                     <div> Tech Savy</div>
                     <div> Quick Grasper of Modern Techs</div>
@@ -28,17 +26,8 @@ const MeAndUnique = () => {
     )
 } 
 
-const OptMeandUniquebg = () => {
-  return <img src={optmeanduniquebg} alt="Optimized Me and Unique BG" className="blurredImage meanduniquebg width100" />;
-};
-
-
-const MAUImageLoader = () => {
-    return <ImageLoader src={MeAndUniqueBg}>
-        <img className="meanduniquebg width100" alt="Me and Unique BG" />
-        <div>Error Loading Image!</div>
-        <OptMeandUniquebg />
-      </ImageLoader>;
+const MeAndUniqueBga = () => {
+    return (<img src={MeAndUniqueBg} className="width100 meanduniquebg" alt="Me and Unique BG"/>)
 }
 
 export { MeAndUnique };

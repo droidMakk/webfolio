@@ -1,8 +1,6 @@
 import React,{ Component } from 'react';
 import './navcomponents.css';
-import ImageLoader from 'react-load-image';
 import bg_chennai from '../../assets/bg_chennai.jpg';
-import optbg_chennai from "../../assets/sqip/bg_chennai.svg";
 import AnimationComponent from '../common/AnimationComponent';
 
 
@@ -40,7 +38,7 @@ class WhoAmI extends Component {
             Nadu in India...
           </p>
           <div>
-            <ChennaiBgLoader />
+            <ChennaiBg />
             <Chennai />
           </div>
           <br />
@@ -51,17 +49,9 @@ class WhoAmI extends Component {
   }
 }
 
-const OptimalChennaiBg = () => {
-    return <img src={optbg_chennai} alt="Chennai Bg Optimized" className="blurredImage chennaiBG width100" />;
-}
 
-const ChennaiBgLoader = () => {
-    return <ImageLoader src={bg_chennai}>
-        <img alt="Chennai BG" className="chennaiBG width100" />
-        <div>Error Loading Image!</div>
-        <OptimalChennaiBg />
-        {/* <RingLoader/> */}
-      </ImageLoader>;
+const ChennaiBg = () => {
+  return <img className="chennaiBG width100"  src={bg_chennai} alt="Chennai Bg"/>
 }
 
 const Chennai = () => {

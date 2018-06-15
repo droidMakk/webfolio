@@ -4,6 +4,8 @@ import ShareContent from './ShareContent.jsx';
 import GithubWhite from "../../assets/test/GithubWhite.svg";
 import LinkedInWhite from "../../assets/test/LinkedinWhite.svg";
 import TwitterWhite from "../../assets/test/TwitterWhite.svg";
+import WhatsAppWhite from "../../assets/whatsapp-logo.svg";
+import CardSection from './CardSection';
 
 const TagDetails = () => {
     return <div className="tagDetails">
@@ -18,17 +20,22 @@ const TagDetails = () => {
         </Card>
         <span>
           <Card>
-            <Card>
+            <CardSection>
               <a href="tel:+91-8939717211">
                 <h5 className="thinText whiteText">
                   <span role="img" aria-label="contact-me">
                     📞
                   </span>
                   <span className="darkText">(+91) 89397</span>-17211
+                  <span>
+                    <a href="https://api.whatsapp.com/send?phone=918939717211">
+                      <img className="social-con" src={WhatsAppWhite} alt="whatsapp" />
+                    </a>
+                  </span>
                 </h5>
               </a>
-            </Card>
-            <Card>
+            </CardSection>
+            <CardSection>
               <a href="mailto:mafrozekk@gmail.com">
                 <h5 className="thinText whiteText">
                   <span role="img" aria-label="mail-box">
@@ -38,7 +45,7 @@ const TagDetails = () => {
                   </span>
                 </h5>
               </a>
-            </Card>
+            </CardSection>
           </Card>
         </span>
         <ShareContent />
