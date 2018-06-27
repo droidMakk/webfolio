@@ -13,7 +13,7 @@ const MeAndUnique = () => {
                     Always remember that you are absolutely unique. Just like everyone else.
                 </p>
                 <p className="alignRight">-Margaret Mead</p>
-                <MeAndUniqueBga />
+                <img src={MeAndUniqueBg} className="width100 meanduniquebg" alt="Me and Unique BG"/>
                 <div className="uniqueList">
                     <div> Tech Savy</div>
                     <div> Quick Grasper of Modern Techs</div>
@@ -25,9 +25,5 @@ const MeAndUnique = () => {
         </AnimatonComponent>
     )
 } 
-
-const MeAndUniqueBga = () => {
-    return (<img src={MeAndUniqueBg} className="width100 meanduniquebg" alt="Me and Unique BG"/>)
-}
 
 export { MeAndUnique };
