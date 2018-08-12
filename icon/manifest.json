@@ -1,10 +1,5 @@
 {
- "short_name": "Droidmakk",
- "name":"Makk's Site",
- "start_url": "./index.html",
- "display": "standalone",
- "theme_color": "#000000",
- "background_color": "#ffffff",
+ "name": "App",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
