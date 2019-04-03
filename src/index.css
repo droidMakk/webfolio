@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poiret+One|Tajawal');
+@import './styles/index.css';
 
 body {
   font-family: 'Tajawal', sans-serif;

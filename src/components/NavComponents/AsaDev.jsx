@@ -6,8 +6,9 @@ import Frameworks from './SlickDev/Frameworks';
 import AnimationComponent from '../common/AnimationComponent';
 
 const AsaDev = () => {
-    return <AnimationComponent>
-    <div className="displaydetailcard">
+  return (
+    <AnimationComponent>
+      <div className="displaydetailcard">
         <p className="displaydetailTitle">
           <span role="img" aria-label="devmode">
             👨‍💻
@@ -17,19 +18,20 @@ const AsaDev = () => {
         <div className="asadevdetails">
           <br />
           <h1 className="courgette">Programming Stack Exposed To..</h1>
-            <Technologies />
+          <Technologies />
           <br />
           <br />
           <h1 className="courgette">Frameworks like to Tinker..</h1>
-            <Frameworks />
+          <Frameworks />
           <br />
           <br />
           <h1 className="courgette">When CI/CD automates things..</h1>
-            <DevOPS />
-            <br/>
+          <DevOPS />
+          <br />
         </div>
       </div>
-      </AnimationComponent>;
-}
+    </AnimationComponent>
+  );
+};
 
-export { AsaDev };
+export {AsaDev};

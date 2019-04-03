@@ -6,6 +6,7 @@ import NavTogglr from "./common/NavTogglr";
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
 import TopBar from './TopBar';
+import TimeLine from '../screens/TimeLine';
 
 class Displaydetails extends Component {
   constructor() {
@@ -102,7 +103,7 @@ class Displaydetails extends Component {
                       <Switch location={location}>
                         <Route exact path="/home" component={Home} />
                         <Route exact path="/whoami" component={WhoAmI} />
-                        <Route exact path="/meandunique" component={MeAndUnique} />
+                        <Route exact path="/meandunique" component={TimeLine} />
                         <Route exact path="/almamater" component={AlmaMater} />
                         <Route exact path="/asadev" component={AsaDev} />
                         <Route exact path="/choiceoftools" component={ChoiceOfTools} />

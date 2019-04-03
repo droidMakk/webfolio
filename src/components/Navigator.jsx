@@ -7,14 +7,13 @@ import TopBar from "./TopBar";
 
 
 const resdata = [
-    {'mesg': 'Home','link':'/home'},
-    {'mesg': 'Who Am I?','link':'/whoami' },
-    {'mesg': 'Me and Unique','link':'/meandunique' },
-    {'mesg': 'Alma mater','link':'/almamater' },
-    {'mesg': 'As a Dev','link':'/asadev' },
-    {'mesg': 'Choice of Tools','link':'/choiceoftools' },
-    {'mesg': 'Social & Blog','link':'/social' },
-    {'mesg': 'Credits','link':'/credits'},
+    {'mesg': '🏡 Home','link':'/home'},
+    {'mesg': '🙋🏼‍♂️ Know me?','link':'/whoami' },
+    {'mesg': '⌚ Timetravel','link':'/meandunique' },
+    {'mesg': '💁🏼‍♂️ Contributions','link':'/almamater' },
+    {'mesg': '💪🏼 Work / 👾 Train','link':'/asadev' },
+    {'mesg': '✍🏼 Blogs','link':'/choiceoftools' },
+    {'mesg': '😄 Credits','link':'/credits'},
 ]
 
 class Navigator extends Component {
