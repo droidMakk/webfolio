@@ -1,13 +1,12 @@
 import React,{ Fragment } from 'react';
-import Card from './Card';
-import ShareContent from './ShareContent.jsx';
-import GithubWhite from "../../assets/test/GithubWhite.svg";
-import LinkedInWhite from "../../assets/test/LinkedinWhite.svg";
-import TwitterWhite from "../../assets/test/TwitterWhite.svg";
-import WhatsAppWhite from "../../assets/whatsapp-logo.svg";
-import CardSection from './CardSection';
+import { ShareContent } from './common';
+import GithubWhite from "../assets/test/GithubWhite.svg";
+import LinkedInWhite from "../assets/test/LinkedinWhite.svg";
+import TwitterWhite from "../assets/test/TwitterWhite.svg";
+import WhatsAppWhite from "../assets/whatsapp-logo.svg";
+import { Card, CardSection } from './common';
 
-const TagDetails = () => {
+export const TagDetails = () => {
     return <div className="tagDetails">
         <Card>
           <h2 className="displayInline whiteText thinText">
@@ -61,5 +60,3 @@ const SocialIcons = () => {
     </Fragment>
   )
 }
-
-export default TagDetails;

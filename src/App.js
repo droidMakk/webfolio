@@ -1,19 +1,14 @@
-import React, { Component, Fragment } from 'react';
-import MainProfile from './components/MainProfile';
-import Navigator from './components/Navigator';
-import Displaydetails from './components/Displaydetails';
-import './components/makeItResponsive.css';
+import React from 'react';
+import { MainProfile, Navigator, Displaydetails } from './screens';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <Fragment>
+      <React.Fragment>
           <MainProfile />
           <Navigator/>
           <Displaydetails/>
-      </Fragment>
+      </React.Fragment>
     );
-  }
 }
 
 export default App;

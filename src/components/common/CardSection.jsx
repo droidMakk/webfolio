@@ -1,6 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const CardSection = ({ children }) => {
+export const CardSection = ({ children }) => {
     return(
         <div style={cardsection_style}>
             {children}
@@ -8,6 +9,9 @@ const CardSection = ({ children }) => {
     )
 }
 
+// CardSection.propTypes = {
+//     children: PropTypes.node.isRequired
+// }
 
 const cardsection_style = {
     fontSize: 'x-large',
@@ -15,5 +19,3 @@ const cardsection_style = {
     paddingBottom: "2%",
     paddingLeft: "5%"
 }
-
-export default CardSection;

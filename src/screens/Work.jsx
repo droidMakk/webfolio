@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class YouKnowMe extends Component {
+export class Work extends Component {
   render() {
     return (
       <div>

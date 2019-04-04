@@ -2,8 +2,7 @@ import React, { Component, Fragment } from 'react';
 import TweetEmbed from "react-tweet-embed";
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
-import './social.css';
-import Card from '../common/Card';
+import { Card } from '../common';
 
 class Social extends Component {
   render() {

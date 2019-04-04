@@ -1,8 +1,9 @@
 import React from 'react';
-import './Home.css';
-import AnimationComponent from '../common/AnimationComponent';
+import AnimationComponent from '../components/common/AnimationComponent';
 
-class Home extends Component {
+
+
+export class Home extends React.Component {
   render () {
     return (
       <AnimationComponent>
@@ -21,5 +22,3 @@ class Home extends Component {
     );
   }
 }
-
-export {Home};

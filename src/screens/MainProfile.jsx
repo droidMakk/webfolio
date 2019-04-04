@@ -1,22 +1,13 @@
-import React,{ Component } from 'react';
-import TagDetails from './common/TagDetails';
-import NavTogglr from './common/NavTogglr';
-import './component.css';
+import React from 'react';
+import { TagDetails } from '../components';
+import { NavTogglr } from '../components/common';
 import profie_image from '../assets/profile_image.jpg'; 
 import dev_bg from '../assets/optimized/dev_bg.jpg';
 
-class MainProfile extends Component {
-
-    closeProfile(){
-        document.getElementById("mainProfileStyle").style.opacity = 0;
-        setTimeout(() => {
-            document.getElementById("mainProfileStyle").style.display = "none";
-        }, 750);
-    }
+export const MainProfile = () => {
     
-    render(){
         return <div className="mainProfileStyle" id="mainProfileStyle">
-            <div className="navswitch" onClick={this.closeProfile}>
+            <div className="navswitch" onClick={closeProfile}>
                 <NavTogglr/>
             </div>
             <div className="imageHolder" style={inLinImageBg}>
@@ -24,9 +15,15 @@ class MainProfile extends Component {
             </div>
             <TagDetails />
           </div>;
-    }
     
 } 
+
+const closeProfile = () => {
+    document.getElementById("mainProfileStyle").style.opacity = 0;
+    setTimeout(() => {
+        document.getElementById("mainProfileStyle").style.display = "none";
+    }, 750);
+}
 
 const ProfileImage = () => {
     return (
@@ -42,5 +39,3 @@ const inLinImageBg = {
     backgroundSize: '100%',
     backgroundRepeat: 'no-repeat'
 }
-
-export default MainProfile;

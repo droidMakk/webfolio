@@ -1,7 +1,6 @@
 import React from 'react';
-import './loading.css';
 
-const Loading = () => {
+export const Loading = () => {
     return(
         <div className="LoadHolder">
             <div className="LoadingText" >Loading</div>
@@ -11,9 +10,3 @@ const Loading = () => {
         </div>
     )
 }
-
-
-
-
-
-export default Loading;

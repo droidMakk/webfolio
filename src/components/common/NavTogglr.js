@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class NavTogglr extends Component {
+export class NavTogglr extends Component {
   render () {
     return (
       <div className="navswitchHolder">
@@ -61,5 +61,3 @@ class NavTogglr extends Component {
     );
   }
 }
-
-export default NavTogglr;

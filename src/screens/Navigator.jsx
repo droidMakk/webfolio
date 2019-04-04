@@ -1,9 +1,7 @@
 import React,{ Component } from 'react';
-import './component.css';
-import NavCard from './common/NavCard';
-import NavTogglr from './common/NavTogglr';
 import { NavLink } from 'react-router-dom';
-import TopBar from "./TopBar";
+import { TopBar } from "../components";
+import { NavCard, NavTogglr } from '../components/common';
 
 
 const resdata = [
@@ -12,22 +10,12 @@ const resdata = [
     {'mesg': '⌚ Timetravel','link':'/meandunique' },
     {'mesg': '💁🏼‍♂️ Contributions','link':'/almamater' },
     {'mesg': '💪🏼 Work / 👾 Train','link':'/asadev' },
-    {'mesg': '✍🏼 Blogs','link':'/choiceoftools' },
+    {'mesg': '✍🏼 Blogs','link':'/blogs' },
     {'mesg': '😄 Credits','link':'/credits'},
 ]
 
-class Navigator extends Component {
-  closeNavigator() {
-    if(window.innerWidth <= 450){
-      document.getElementById("navigatorHolder").style.opacity = 0;
-      setTimeout(() => {
-        document.getElementById("navigatorHolder").style.display = "none";
-      }, 750);
-    }
-  }
-
-  render() {
-    return <div className="navigatorHolder" id="navigatorHolder">
+export const Navigator = () => {
+  return <div className="navigatorHolder" id="navigatorHolder">
         <TopBar />
         <div className="navswitch" onClick={this.closeNavigator}>
           <NavTogglr />
@@ -38,15 +26,22 @@ class Navigator extends Component {
               <NavElement
                 key={data.mesg}
                 data={data}
-                onClick={this.closeNavigator}
+                onClick={closeNavigator}
               />
             ))}
           </nav>
         </div>
       </div>;
+}
+
+const closeNavigator = () => {
+  if(window.innerWidth <= 450){
+    document.getElementById("navigatorHolder").style.opacity = 0;
+    setTimeout(() => {
+      document.getElementById("navigatorHolder").style.display = "none";
+    }, 750);
   }
 }
-export default Navigator;
 
 
 const NavElement = (props) => {

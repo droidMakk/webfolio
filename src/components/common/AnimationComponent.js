@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './routeswitcher.css';
 
-class AnimationComponent extends Component {
+export class AnimationComponent extends Component {
   constructor (props) {
     super (props);
 

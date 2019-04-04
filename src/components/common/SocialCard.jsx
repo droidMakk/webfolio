@@ -1,8 +1,7 @@
 import React from 'react';
 
 
-const SocialCard = () => {
-    const { icon, link } = this.props;
+export const SocialCard = ({ icon, link }) => {
         
     return (
         <div className="social-card" id="social-card">
@@ -12,5 +11,3 @@ const SocialCard = () => {
         </div>
     )
 }
-
-export default SocialCard;

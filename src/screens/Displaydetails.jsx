@@ -1,14 +1,15 @@
 import React,{ Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import './component.css';
-import { Home, WhoAmI, MeAndUnique, AlmaMater, AsaDev, ChoiceOfTools, Social } from './NavComponents';
-import NavTogglr from "./common/NavTogglr";
+
+import { Home, WhoAmI, AlmaMater, AsaDev, ChoiceOfTools, Social } from '../components/NavComponents';
+import { NavTogglr } from '../components/common';
+import { TopBar } from '../components';
+import { Blogs, TimeLine } from '../screens';
+
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
-import TopBar from './TopBar';
-import TimeLine from '../screens/TimeLine';
 
-class Displaydetails extends Component {
+export class Displaydetails extends Component {
   constructor() {
     super();
     this.toggleMainNav = this.toggleMainNav.bind(this);
@@ -106,7 +107,7 @@ class Displaydetails extends Component {
                         <Route exact path="/meandunique" component={TimeLine} />
                         <Route exact path="/almamater" component={AlmaMater} />
                         <Route exact path="/asadev" component={AsaDev} />
-                        <Route exact path="/choiceoftools" component={ChoiceOfTools} />
+                        <Route exact path="/blogs" component={Blogs} />
                         <Route exact path="/social" component={Social} />
                       </Switch>
                 </div>

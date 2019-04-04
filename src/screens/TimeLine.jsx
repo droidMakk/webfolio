@@ -2,7 +2,7 @@ import React from "react";
 import AnimationComponent from "../components/common/AnimationComponent";
 import { TimeLineComponent } from "../components/TimeLineComponent";
 
-export default function TimeLine() {
+export function TimeLine() {
 	let timeLines = [
 		{ title: "Test", subHeading: "2019", content: "Dummy COntent" }
 	];
