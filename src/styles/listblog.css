@@ -1,0 +1,32 @@
+.bloglistholder {
+    margin-top: 20px;
+}
+
+.bloglistcard {
+    padding-left: 15px;
+    border-left: 2px #fd4445 solid; 
+    margin-top: 10px;
+    transition: all .2s;
+    text-decoration: none;
+    color: #fd4445;
+}
+
+.bloglistcard:hover{
+    background-color: #eeeeee;
+    border-left: 10px #fd4445 solid;   
+}
+
+.bloglistcard > h3 {
+    font-weight: 500;
+    color: #212121;
+}
+
+.bloglistcard > hr {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.bloglistcard > p :first-of-type {
+    font-size: 10px;
+    color: grey;
+}

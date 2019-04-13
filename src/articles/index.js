@@ -1,3 +1,4 @@
+export * from './list';
 export const Test = `
 
 # Some Artcile title

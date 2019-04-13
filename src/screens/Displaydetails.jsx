@@ -4,7 +4,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import { Home, WhoAmI, AlmaMater, AsaDev, ChoiceOfTools, Social } from '../components/NavComponents';
 import { NavTogglr } from '../components/common';
 import { TopBar } from '../components';
-import { Blogs, TimeLine } from '../screens';
+import { Blogs, TimeLine, BlogPage, ListBlogs } from '../screens';
 
 import HamMenu from "../assets/ham-menu.svg";
 import profileIcon from "../assets/profileIcon.svg";
@@ -107,7 +107,8 @@ export class Displaydetails extends Component {
                         <Route exact path="/meandunique" component={TimeLine} />
                         <Route exact path="/almamater" component={AlmaMater} />
                         <Route exact path="/asadev" component={AsaDev} />
-                        <Route exact path="/blogs" component={Blogs} />
+                        <Route exact path="/blogs" component={ListBlogs} />
+                        <Route exact path="/blogs/:blogid" component={BlogPage} />
                         <Route exact path="/social" component={Social} />
                       </Switch>
                 </div>
