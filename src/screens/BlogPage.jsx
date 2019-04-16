@@ -14,7 +14,7 @@ export class BlogPage extends React.Component {
                 <div className="displaydetailcard">
                     <p className="displaydetailTitle">
                         <span style={{ float: 'left', cursor: 'pointer' }} onClick={() => { this.props.history.go(-1) }} >{`<`}</span>
-                        {`Blog Title ${params.blogid}`}
+                        {`Dummy title ${params.blogid}`}
                         <span role="img" aria-label="">
                             📝
                         </span>{" "}
