@@ -1,8 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export class NavTogglr extends Component {
-  render () {
-    return (
+export const NavTogglr = () => {
+  return (
       <div className="navswitchHolder">
         <div className="topArrow">
           <svg
@@ -59,5 +58,4 @@ export class NavTogglr extends Component {
         </div>
       </div>
     );
-  }
 }

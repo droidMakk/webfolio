@@ -7,3 +7,4 @@ export * from './ShareContent.jsx';
 export * from './SocialCard.jsx';
 export * from './ShareContent.jsx';
 export * from './AnimationComponent';
+export * from './Input';

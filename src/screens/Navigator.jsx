@@ -9,7 +9,7 @@ const resdata = [
     {'mesg': '🙋🏼‍♂️ Know me?','link':'/whoami' },
     {'mesg': '⌚ Timetravel','link':'/meandunique' },
     {'mesg': '💁🏼‍♂️ Contributions','link':'/almamater' },
-    {'mesg': '💪🏼 Work / 👾 Train','link':'/asadev' },
+    {'mesg': '💪🏼 Work / 👾 Train','link':'/work' },
     {'mesg': '✍🏼 Blogs','link':'/blogs' },
     {'mesg': '😄 Credits','link':'/credits'},
 ]
@@ -17,7 +17,7 @@ const resdata = [
 export const Navigator = () => {
   return <div className="navigatorHolder" id="navigatorHolder">
         <TopBar />
-        <div className="navswitch" onClick={this.closeNavigator}>
+        <div className="navswitch" onClick={closeNavigator}>
           <NavTogglr />
         </div>
         <div className="navigator">
@@ -48,7 +48,7 @@ const NavElement = (props) => {
     const { mesg, link } = props.data;
     const { onClick } = props;
     return(
-        <NavLink to={link} activeClassName="imActive">
+        <NavLink to={link} key={props.key} activeClassName="imActive">
             <NavCard key={mesg} onClick={onClick}>
                 <div>{mesg}</div>
             </NavCard>

@@ -1,7 +1,8 @@
+@import './input.css';
 @import './common.css';
 @import './home.css';
 @import './timeline.css';
 @import './component.css';
-@import './makeitresponsive.css';
 @import './social.css';
 @import './listblog.css';
+@import './makeitresponsive.css';

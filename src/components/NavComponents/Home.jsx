@@ -8,7 +8,7 @@ class Home extends Component {
       <AnimationComponent>
         <div className="displaydetailcard" >
             <p className="displaydetailTitle" >
-                <span role="img" aria-label="" >
+                <span role="img" aria-label="home" >
                     🏡
                 </span> Home
             </p>
